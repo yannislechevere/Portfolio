@@ -5,3 +5,4 @@ burger.addEventListener('click', () => {
     const isOpen = header.getAttribute('data-open') === 'true';
     header.setAttribute('data-open', !isOpen);
 });
+
