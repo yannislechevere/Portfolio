@@ -32,20 +32,50 @@ p {
     color: #4B5563;
     text-align: justify;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-
-@keyframes  animate-bg {
-    100% {
-      background-position: 50px 50px;
-    }
-  }
-  
 main {
     background-color: #F3F4F6;
     width: 75%;
     margin: 0px auto;
     padding: 5%;
 }
+@keyframes  animate-bg {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+
+  main {
+    width: 90%;
+    padding: 1em;
+  }
+
+  header nav a {
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+
+
+}
+
+
 
 /****************************************************************************************************************/
 /*                                                  Header                                                      */
@@ -352,6 +382,25 @@ header > button {
     #projet > div > section a img {
         width: 1.8em;
     }
+
+
+    #index > div section,
+    #projet1 section {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    #index > div {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #projet1 section {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        padding: 1em;
+    }
 }
 
 
@@ -490,7 +539,14 @@ header > button {
     #contact form {
         padding: 1em;
     }   
+
+    #contact > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
 }
+
 
 
 
@@ -691,5 +747,12 @@ footer > div:nth-child(2) p {
     footer > div:nth-child(2) p {
         font-size: 0.9em;
     }
+    footer > div div h3 {
+    font-size: 1.2em;
+  }
+}
+* {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
