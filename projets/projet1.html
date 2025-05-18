@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le jeu du Snake</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html">A propos</a>
+            <a href="../projet.html">Projet</a>
+            <a href="../etude.html">Etude</a>
+            <a href="../meContacter.html">Me contacter</a>
+            <a href="../autre/CV_Yannis.pdf" download>Mon CV</a>
+        </nav>
+    </header>
+    <main id="projet1">
+        <h1>Le jeu du Snake</h1>
+
+        <p>Le but de ce projet est de programmer le jeu snake en version non grapfique en mode console avec le language C. Ce projet est diviser en 4 version qui apporte chaque' une leur lots de nouvauter. Chaque version est accompagner de son cahier de teste. Ca a eter un travail individuelle. </p>
+
+        <h2>Compétance aquise : </h2>
+        <p>Ce projet est en lien avec la <strong><a href="competance1.html">competance 1</a></strong> du programme du BUT : developper des applications informatique simple</p>
+        <section>
+            <div>
+                <h2>La Version n°1 :</h2>
+                <p>Dans cette première version, j'ai programmer le déplacement d’un serpent de taille N : le serpent se déplace vers la droite tant que l’utilisateur n’a pas appuyé sur la touche ‘a’. À l’exécution, l’utilisateur choisi d’abord la position initiale du serpent en tapant un numéro de colonne x, puis un numéro de ligne y. L’écran s’efface ensuite  et affiche le serpent en mouvement. </p>
+            </div>
+            <div>
+                <h3>Exemple du rendue : </h3>
+                <img src="../video/projet1Version1.gif" alt="video gif illustrant la version 1">
+            </div>
+        </section>
+        
+        
+        <section>
+            <div>
+                <h2>La Version n°2 :</h2>
+                <p>Dans cette deuxième version du programme de Snake, le serpent peut se déplacer dans les quatre directions. L’utilisateur peut changer la direction du serpent grâce aux touches ‘q’ (gauche), ‘z’ (haut), ‘s’ (bas) ou ‘d’ (droite). Le serpent a toujours une taille de 10, mais sa position initiale n'est plus demandée à l’utilisateur au début de l’exécution. La position initiale de sa tête est (20,20), les autres éléments étant positionnés à sa gauche. Au début de l’exécution, le serpent se dirige initialement vers la droite. Le serpent ne peut pas faire demi-tour sur lui-même ; par exemple, s’il se dirige vers la droite, il ne peut pas aller vers la gauche, la touche ‘q’ n’a donc aucun effet dans ce cas. Par contre, on autorise le serpent à se croiser. On autorise le serpent à "disparaître" de l’écran.</p>
+            </div>
+            <div>
+                <h3>Exemple du rendue : </h3>
+                <img src="../video/projet1Version2.gif" alt="video gif illustrant la version 2">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>La Version n°3 :</h2>
+                <p>Dans cette troisième version du programme, le serpent se déplace à l’intérieur d’un plateau délimité par une bordure constituée de caractères ‘#’. 
+                </p>
+                <p>Le plateau a une de taille 80 caractères de large sur 40 caractères de haut. Le serpent ne peux pas sortir de ce cadre. S’il entre en collision avec un élément de la bordure, le jeu se termine.
+                </p>
+                <p>Le serpent a toujours une taille de 10, mais sa tête est positionnée initialement en (40,20). Les autres éléments sont positionnés à sa gauche car le serpent se dirige initialement vers la droite.
+                </p>
+                <p>À l’intérieur du cadre, il y a 4 pavés. Un pavé est un carré de taille 5 composé de caractères ‘#’. Ces pavés sont placés à des positions définies de manière aléatoire. De plus un pavé n'es jamais "collé" à une bordure.
+                </p>
+            </div>
+            <div>
+                <h3>Exemple du rendue : </h3>
+                <img src="../video/projet1Version3.gif" alt="video gif illustrant la version 2">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>La Version n°4 :</h2>
+                <p>Dans cette quatrième version du programme, le serpent mange des pommes. Une pomme, représentée par le caractère ‘6’, apparaît aléatoirement à l’intérieur du plateau sur une case non occupée par un élément de pavé ou de serpent. Dès que le serpent « mange » la pomme en passant dessus,cette pomme disparaît, une autre pomme apparaît ailleurs, le serpent s’allonge d’un anneau supplémentaire et sa vitesse de déplacement augmente sensiblement.
+                </p>
+                <p>
+                Dès que le nombre de pommes mangées par le serpent atteint 10, le programme se termine et la
+                partie est gagnée.</p>
+                <p>
+                Le cadre du plateau est maintenant "percé" d’une sortie au centre de chacun de ses côtés, si bien
+                que le serpent peut sortir du cadre en empruntant ces issues. Quand le serpent sort du cadre, il
+                réapparaît sur le côté opposé.
+                </p>
+                
+            </div>
+            <div>
+                <h3>Exemple du rendue : </h3>
+                <img src="../video/projet1Version4.gif" alt="video gif illustrant la version 2">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
