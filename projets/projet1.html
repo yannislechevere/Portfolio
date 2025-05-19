@@ -27,21 +27,18 @@
         <div>
             <section>
                 <h2>Compétence n°1 : Implémentation d'un besoin client</h2>
-                <p>
-                    Ce projet s'inscrit dans la <strong>compétence 1</strong> du <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank">programme du BUT Informatique</a> : développer une solution informatique adaptée à un besoin client.
-                </p>
+                <p>Ce projet s'inscrit dans la <strong>compétence 1</strong> du <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank">programme du BUT Informatique</a> : développer une solution informatique adaptée à un besoin client.</p>
             </section>
 
             <section>
-                <h2>Les outils utiliser : </h2>
+                <h2>Les outils utilisés :</h2>
                 <ul>
-                    <li><a href="https://devdocs.io/c/"><img src="../icons/iconC.png">Le language C</a> (pour programmer les versions)</li>
-                    <li><a href="https://www.doxygen.nl/"><img src="../icons/iconDoxygen.avif">Doxygen</a> (pour la documetation du code)</li>
+                    <li><a href="https://devdocs.io/c/"><img src="../icons/iconC.png">Le langage C</a> (pour programmer les versions)</li>
+                    <li><a href="https://code.visualstudio.com/docs"><img src="../icons/iconVisualStudioCode.png">Visual Studio Code</a> (pour éditer le code)</li>
+                    <li><a href="https://www.doxygen.nl/"><img src="../icons/iconDoxygen.avif">Doxygen</a> (pour la documentation du code)</li>
                     <li><a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="../icons/iconGoogleSheets.png">Google Sheets</a> (pour les cahiers de tests)</li>
                 </ul>
             </section>  
-
-            </section>
 
             <section>
                 <h2>Les étapes du projet</h2>
@@ -68,7 +65,7 @@
                 <button>Version 3 : Limites et obstacles</button>
                 <div>
                     <p>
-                    Le plateau de 80x40 est délimité par des bordures. Le serpent meurt s’il touche un mur. 4 pavés d’obstacles sont générés aléatoirement dans le cadre sans toucher les bords.
+                    Le plateau de 80x40 est délimité par des bordures. Le serpent meurt s’il touche un mur. Quatre pavés d’obstacles sont générés aléatoirement dans le cadre sans toucher les bords.
                     </p>
                     <img src="../video/projet1Version3.gif" alt="Démo de la version 3 du Snake">
                 </div>
@@ -76,16 +73,13 @@
                 <button>Version 4 : Pommes et téléportation</button>
                 <div>
                     <p>
-                    Le serpent mange des pommes représentées par ‘6’. À chaque pomme mangée : le score augmente, la taille du serpent s’allonge, et la vitesse s’accélère. À 10 pommes mangées, la partie est gagnée. Le serpent peut traverser le plateau via des passages sur chaque bord.
+                    Le serpent mange des pommes représentées par ‘6’. À chaque pomme mangée : le score augmente, la taille du serpent s’allonge et la vitesse s’accélère. À 10 pommes mangées, la partie est gagnée. Le serpent peut traverser le plateau via des passages sur chaque bord.
                     </p>
                     <img src="../video/projet1Version4.gif" alt="Démo de la version 4 du Snake">
                 </div>
             </section>
 
         </div>
-        
-
-
     </main>
 
     <footer>
@@ -123,26 +117,23 @@
         </div>
     </footer>
     <script src="script.js"></script>
-<script>
-  const buttons = document.querySelectorAll("section > button");
+    <script>
+      const buttons = document.querySelectorAll("section > button");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const content = button.nextElementSibling;
-      const isOpen = content.style.maxHeight;
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          const isOpen = content.style.maxHeight;
 
-      // Fermer tous les autres
-      document.querySelectorAll("section > div").forEach(div => {
-        if (div !== content) div.style.maxHeight = null;
+          // Fermer tous les autres
+          document.querySelectorAll("section > div").forEach(div => {
+            if (div !== content) div.style.maxHeight = null;
+          });
+
+          // Toggle celui cliqué
+          content.style.maxHeight = isOpen ? null : content.scrollHeight + "px";
+        });
       });
-
-      // Toggle celui cliqué
-      content.style.maxHeight = isOpen ? null : content.scrollHeight + "px";
-    });
-  });
-</script>
-
-
-
+    </script>
 </body>
 </html>

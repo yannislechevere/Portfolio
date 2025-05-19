@@ -626,38 +626,42 @@ header > button {
     border-radius: 10px;
 }
 
-#proj section a {
-    position: relative;
-    text-decoration: none;
-    color: inherit;
+#proj section:nth-child(2) ul li {
+  list-style: none;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
-#proj section a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background: currentColor;
-    transition: width 0.3s ease;
+#proj section:nth-child(2) ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
 }
 
-#proj section a:hover::after {
-    width: 100%;
+#proj section:nth-child(2) ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+#proj section:nth-child(2) ul li a:hover::after {
+  width: 100%;
 }
 
 #proj section:nth-child(2) ul li img {
-    width: 2em;
+  width: 1.5em;
+  height: auto;
 }
-
-#proj section:nth-child(2) ul li {
-    list-style: none;
-    margin: 1em 0em;
-}
-
-
-
 
 /****************************************************************************************************************/
 /*                                                  Footer                                                      */
