@@ -662,7 +662,26 @@ header > button {
   width: 1.5em;
   height: auto;
 }
+#proj section p a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
 
+#proj section p a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+#proj section p a:hover::after {
+    width: 100%;
+}
 /****************************************************************************************************************/
 /*                                                  Footer                                                      */
 /****************************************************************************************************************/

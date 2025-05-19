@@ -17,7 +17,7 @@
             <a href="../autre/CV_Yannis.pdf" download>Mon CV</a>
         </nav>
     </header>
-    <main id="projet1">
+    <main id="proj">
         <h1>SWOT et RSE de Coca Cola</h1>
 
         <p>Le but de ce projet est de réaliser le SWOT (Strengths, Weaknesses, Opportunities et Threats) et la RSE (Responsabilité Sociétale des Entreprises) de l'entreprise Coca Cola.</p>
@@ -36,49 +36,65 @@
                 </ul>
             </section>  
         
-            <h2>Les Etapes : </h2>
-            <p>Ce projet est diviser en quetre etape et donc quatre versions du programe differente. Chaque version apporte sont lot de nouveauter. Avec chaque version, il y  a un cahier de test pour verifier que la version fonctionne correctement.</p>
-        
             <section>
+                <h2>Les étapes du projet</h2>
+                <p>
+                    Le développement s'est déroulé en 4 versions successives. Cliquez sur chaque version pour voir les détails.
+                </p>
+
+                <button>Version 1 : Déplacement simple</button>
                 <div>
-                    <h2>LSWOT de Coca Cola :</h2>
-                    <p>Dans cette première version, j'ai programmer le déplacement d’un serpent de taille N : le serpent se déplace vers la droite tant que l’utilisateur n’a pas appuyé sur la touche ‘a’. À l’exécution, l’utilisateur choisi d’abord la position initiale du serpent en tapant un numéro de colonne x, puis un numéro de ligne y. L’écran s’efface ensuite  et affiche le serpent en mouvement. </p>
+                    <p>
+                    Le serpent de taille fixe se déplace automatiquement vers la droite. L'utilisateur définit sa position initiale via les coordonnées (x, y). Le jeu commence ensuite avec un affichage dynamique dans le terminal.
+                    </p>
+                    <img src="../video/projet1Version1.gif" alt="Démo de la version 1 du Snake">
                 </div>
+
+                <button>Version 2 : Contrôle du serpent</button>
                 <div>
-                    <h3>Exemple du rendue : </h3>
-                    <img src="../video/projet1Version1.gif" alt="video gif illustrant la version 1">
+                    <p>
+                    Le serpent peut se déplacer dans toutes les directions avec les touches <strong>ZQSD</strong>. Le demi-tour est interdit. Le serpent peut se croiser et sortir de l’écran.
+                    </p>
+                    <img src="../video/projet1Version2.gif" alt="Démo de la version 2 du Snake">
                 </div>
-            </section>
-            
-            
-            <section>
+
+                <button>Version 3 : Limites et obstacles</button>
                 <div>
-                    <h2>RSE de Coca Cola :</h2>
-                    <p>Dans cette deuxième version du programme de Snake, le serpent peut se déplacer dans les quatre directions. L’utilisateur peut changer la direction du serpent grâce aux touches ‘q’ (gauche), ‘z’ (haut), ‘s’ (bas) ou ‘d’ (droite). Le serpent a toujours une taille de 10, mais sa position initiale n'est plus demandée à l’utilisateur au début de l’exécution. La position initiale de sa tête est (20,20), les autres éléments étant positionnés à sa gauche. Au début de l’exécution, le serpent se dirige initialement vers la droite. Le serpent ne peut pas faire demi-tour sur lui-même ; par exemple, s’il se dirige vers la droite, il ne peut pas aller vers la gauche, la touche ‘q’ n’a donc aucun effet dans ce cas. Par contre, on autorise le serpent à se croiser. On autorise le serpent à "disparaître" de l’écran.</p>
+                    <p>
+                    Le plateau de 80x40 est délimité par des bordures. Le serpent meurt s’il touche un mur. 4 pavés d’obstacles sont générés aléatoirement dans le cadre sans toucher les bords.
+                    </p>
+                    <img src="../video/projet1Version3.gif" alt="Démo de la version 3 du Snake">
                 </div>
+
+                <button>Version 4 : Pommes et téléportation</button>
                 <div>
-                    <h3>Exemple du rendue : </h3>
-                    <img src="../video/projet1Version2.gif" alt="video gif illustrant la version 2">
+                    <p>
+                    Le serpent mange des pommes représentées par ‘6’. À chaque pomme mangée : le score augmente, la taille du serpent s’allonge, et la vitesse s’accélère. À 10 pommes mangées, la partie est gagnée. Le serpent peut traverser le plateau via des passages sur chaque bord.
+                    </p>
+                    <img src="../video/projet1Version4.gif" alt="Démo de la version 4 du Snake">
                 </div>
             </section>
 
         </div>
         
+
+
     </main>
+
     <footer>
         <div>
-            <div class="footer-section">
+            <div>
                 <h3>Navigation</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projet.html">Projets</a></li>
-                    <li><a href="meContacter.html">Contact</a></li>
-                    <li><a href="autre/CV_Yannis.pdf" target="_blank" download>Mon CV</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../projet.html">Projets</a></li>
+                    <li><a href="../meContacter.html">Contact</a></li>
+                    <li><a href="../autre/CV_Yannis.pdf" target="_blank" download>Mon CV</a></li>
                 </ul>
             </div>
 
-            <div class="footer-section">
-                <a href="meContacter.html"><h3>Contactez moi</h3></a>
+            <div>
+                <a href="../meContacter.html"><h3>Contactez-moi</h3></a>
                 <ul>
                     <li>Lieu : Lannion / Bretagne</li>
                     <li>Téléphone : <a href="tel:+33656803242">+33 6 56 80 32 42</a></li>
@@ -86,19 +102,40 @@
                 </ul>
             </div>
 
-            <div class="footer-section">
+            <div>
                 <h3>Suivez-moi</h3>
                 <ul>
-                    <li><a href="https://github.com/yannislechevere" target="_blank"><img src="icons/iconGithub.png" alt="GitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="icons/iconLincedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://github.com/yannislechevere" target="_blank"><img src="../icons/iconGithub.png" alt="GitHub"></a></li>
+                    <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="../icons/iconLincedin.png" alt="LinkedIn"></a></li>
                 </ul>
             </div>
         </div>
 
         <div>
-            <p>© 2025 Yannis Le Chevere — Tous droits réservés.</p>
+            <p>© 2025 Yannis Le Chevère — Tous droits réservés.</p>
         </div>
     </footer>
     <script src="script.js"></script>
+<script>
+  const buttons = document.querySelectorAll("section > button");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      const isOpen = content.style.maxHeight;
+
+      // Fermer tous les autres
+      document.querySelectorAll("section > div").forEach(div => {
+        if (div !== content) div.style.maxHeight = null;
+      });
+
+      // Toggle celui cliqué
+      content.style.maxHeight = isOpen ? null : content.scrollHeight + "px";
+    });
+  });
+</script>
+
+
+
 </body>
 </html>
