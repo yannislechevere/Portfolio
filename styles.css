@@ -619,8 +619,8 @@ header > button {
 }
 
 #proj section > div img {
-    width: 100%;
-    max-width: 600px;
+    max-width: 60em;
+    max-height: 30em;
     display: block;
     margin: 1em auto;
     border-radius: 10px;
