@@ -809,3 +809,28 @@ footer > div:nth-child(2) p {
   -webkit-tap-highlight-color: transparent;
 }
 
+
+
+body[sombre] header {
+    background-color: #1E2A38;
+}
+
+body[sombre] header a {
+    color: white;
+}
+
+body[sombre] main {
+    background-color: #1E2A38;
+}
+
+body[sombre] p,
+body[sombre] h1,
+body[sombre] h2,
+body[sombre] h3, {
+    background-color: #1E2A38;
+}
+
+body[sombre] header button {
+    background-color: #e0e0e0;
+    color: #121212;
+}

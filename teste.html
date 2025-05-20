@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page multilingue</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2em;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 1em;
+        }
+
+        select {
+            padding: 0.5em;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌐</h1>
+        <select onchange="changerLangue(this.value)">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </header>
+
+    <main>
+        <h2 data-fr="Bienvenue sur ma page" data-en="Welcome to my page">Bienvenue sur ma page</h2>
+        <p data-fr="Ceci est du texte en français." data-en="This is text in English.">Ceci est du texte en français.</p>
+    </main>
+
+    <script>
+        function changerLangue(langue) {
+            const elements = document.querySelectorAll('[data-fr]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute('data-' + langue);
+            });
+        }
+    </script>
+</body>
+</html>

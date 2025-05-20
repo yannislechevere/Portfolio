@@ -1,113 +1,201 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - LE CHEVERE Yannis</title>
-  <link rel="icon" href="images/portraitYannis.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-fr="Portfolio - LE CHEVÈRE Yannis" data-en="Portfolio - LE CHEVÈRE Yannis">Portfolio - LE CHEVÈRE Yannis</title>
+    <link rel="icon" href="images/portraitYannis.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    
+
     <header>
         <button aria-label="Menu">&#9776;</button>
         <nav>
-            <a href="index.html">Accueil</a>
-            <a href="projet.html">Projets</a>
-            <a href="meContacter.html">Contact</a>
-            <a href="autre/CV_Yannis.pdf" download>Mon CV</a>
+            <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+            <a href="projet.html" data-fr="Projets" data-en="Projects">Projets</a>
+            <a href="meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
+            <a href="autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
         </nav>
+        <select onchange="changerLangue(this.value)">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
     </header>
 
     <main id="index">
         <div>
             <section>
-                <h1>LE CHEVERE <br>Yannis</h1>
-                <p>Bonjour et bienvenue sur mon portfolio ! Étudiant en informatique, passionné par le développement, les nouvelles technologies et l’innovation numérique.</p>
+                <h1>LE CHEVÈRE <br>Yannis</h1>
+                <p 
+                data-fr="Bonjour et bienvenue sur mon portfolio ! Étudiant en informatique, passionné par le développement, les nouvelles technologies et l’innovation numérique."
+                data-en="Hello and welcome to my portfolio! I am a computer science student passionate about development, new technologies, and digital innovation.">
+                Bonjour et bienvenue sur mon portfolio ! Étudiant en informatique, passionné par le développement, les nouvelles technologies et l’innovation numérique.
+                </p>
             </section>
 
             <section>
-                <h2>À propos de moi</h2>
-                <p>Je m'appelle Yannis Le Chevere, j’ai 19 ans et je suis né le 6 janvier 2006. Je suis actuellement en première année de BUT Informatique à l’IUT de Lannion. Curieux et motivé, je me spécialise dans le développement informatique, les bases de données et la cybersécurité.</p>
+                <h2 data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
+                <p>
+                    <span data-fr="Je m'appelle Yannis Le Chevère, j’ai 19 ans et je suis né le 6 janvier 2006. Je suis actuellement en première année de " 
+                        data-en="My name is Yannis Le Chevère, I am 19 years old and was born on January 6, 2006. I am currently in my first year of ">
+                    Je m'appelle Yannis Le Chevère, j’ai 19 ans et je suis né le 6 janvier 2006. Je suis actuellement en première année de 
+                    </span>
+                    <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank"
+                    data-fr="BUT Informatique" data-en="Bachelor of IT (BUT Informatique)">BUT Informatique</a>
+                    <span data-fr=" à l’IUT de Lannion. Curieux et motivé, je me spécialise dans le développement informatique, les bases de données et la cybersécurité."
+                        data-en=" at the IUT of Lannion. Curious and motivated, I specialize in software development, databases, and cybersecurity.">
+                    à l’IUT de Lannion. Curieux et motivé, je me spécialise dans le développement informatique, les bases de données et la cybersécurité.
+                    </span>
+                </p>
             </section>
 
+
             <section>
-                <h2>Parcours académique</h2>
+            <h2 data-fr="Parcours académique" data-en="Academic Background">Parcours académique</h2>
+            <div>
                 <div>
-                    <div>
-                        <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf"><h3>BUT Informatique</h3></a>
-                        <p>Actuellement à l’<a href="https://iut-lannion.univ-rennes.fr/">IUT de Lannion</a>, ce cursus me permet d’approfondir mes connaissances en développement web, gestion de projet, réseaux, systèmes et sécurité informatique.</p>
-                    </div>
-                    <div>
-                        <a href="https://www.education.gouv.fr/reussir-au-lycee/le-baccalaureat-general-10457"><h3>Baccalauréat Général</h3></a>
-                        <p>Obtenu en 2024 au <a href="https://www.lycee-pavie.fr/">lycée Auguste Pavie</a> à Guingamp, avec les spécialités Mathématiques et NSI (Numérique et Sciences Informatiques).Mention assez bien.</p>
-                    </div>
-                    <div>
-                        <a href="https://www.education.gouv.fr/le-diplome-national-du-brevet-10613"><h3>Diplome national du brevet</h3></a>
-                        <p>Obtenu en 2021 au <a href="https://www.college-jacques-prevert-guingamp.ac-rennes.fr/">collège Jacques Prever</a>  a Guingamps. Mention très bien.</p>
-                    </div>
+                    <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf">
+                        <h3>BUT Informatique</h3>
+                    </a>
+                    <p>
+                        Actuellement à l’
+                        <span data-fr="Actuellement à l’" data-en="Currently at "></span>
+                        <a href="https://iut-lannion.univ-rennes.fr/" target="_blank" data-fr="IUT de Lannion" data-en="IUT of Lannion">IUT de Lannion</a>
+                        <span 
+                            data-fr=", ce cursus me permet d’approfondir mes connaissances en développement web, gestion de projet, réseaux, systèmes et sécurité informatique."
+                            data-en=", this program allows me to deepen my knowledge in web development, project management, networks, systems, and cybersecurity.">
+                            , ce cursus me permet d’approfondir mes connaissances en développement web, gestion de projet, réseaux, systèmes et sécurité informatique.
+                        </span>
+                    </p>
                 </div>
-                
+
+                <div>
+                    <a href="https://www.education.gouv.fr/reussir-au-lycee/le-baccalaureat-general-10457">
+                        <h3>Baccalauréat Général</h3>
+                    </a>
+                    <p>
+                        Obtenu en 2024 au 
+                        <span data-fr="Obtenu en 2024 au " data-en="Graduated in 2024 from "></span>
+                        <a href="https://www.lycee-pavie.fr/" target="_blank" data-fr="lycée Auguste Pavie" data-en="Auguste Pavie High School">lycée Auguste Pavie</a>
+                        <span 
+                            data-fr=" à Guingamp, avec les spécialités Mathématiques et NSI (Numérique et Sciences Informatiques). Mention assez bien."
+                            data-en=" in Guingamp, with majors in Mathematics and Computer Science. Honorable mention.">
+                            à Guingamp, avec les spécialités Mathématiques et NSI (Numérique et Sciences Informatiques). Mention assez bien.
+                        </span>
+                    </p>
+                </div>
+
+                <div>
+                    <a href="https://www.education.gouv.fr/le-diplome-national-du-brevet-10613">
+                        <h3>Diplôme National du Brevet</h3>
+                    </a>
+                    <p>
+                        Obtenu en 2021 au 
+                        <span data-fr="Obtenu en 2021 au " data-en="Graduated in 2021 from "></span>
+                        <a href="https://www.college-jacques-prevert-guingamp.ac-rennes.fr/" target="_blank" data-fr="collège Jacques Prévert" data-en="Jacques Prévert Middle School">collège Jacques Prévert</a>
+                        <span 
+                            data-fr=" à Guingamp. Mention très bien." data-en=" in Guingamp. High honors.">
+                            à Guingamp. Mention très bien.
+                        </span>
+                    </p>
+                </div>
+            </div>
             </section>
+
             <section>
-                <h2>Recherche d'une alternance</h2>
-                <p>Je suis actuellement à la recherche d’une alternance pour ma deuxième année de BUT Informatique. Mon objectif : rejoindre une entreprise innovante où je pourrais mettre en pratique mes compétences en développement, gestion de projet et analyse de données.</p>
-                <p>Je privilégie les opportunités à Brest et ses alentours, mais je suis ouvert à d'autres localisations selon les projets proposés.</p>
+                <h2 data-fr="Recherche d'une alternance" data-en="Looking for an Apprenticeship">Recherche d'une alternance</h2>
+                <p 
+                    data-fr="Je suis actuellement à la recherche d’une alternance pour ma deuxième année de BUT Informatique. Mon objectif : rejoindre une entreprise innovante où je pourrais mettre en pratique mes compétences en développement, gestion de projet et analyse de données."
+                    data-en="I am currently looking for an apprenticeship for my second year of the Computer Science program. My goal is to join an innovative company where I can apply my skills in development, project management, and data analysis.">
+                    Je suis actuellement à la recherche d’une alternance pour ma deuxième année de BUT Informatique. Mon objectif : rejoindre une entreprise innovante où je pourrais mettre en pratique mes compétences en développement, gestion de projet et analyse de données.
+                </p>
+                <p 
+                    data-fr="Je privilégie les opportunités à Brest et ses alentours, mais je suis ouvert à d'autres localisations selon les projets proposés."
+                    data-en="I prefer opportunities in Brest and surrounding areas, but I am open to other locations depending on the projects offered.">
+                    Je privilégie les opportunités à Brest et ses alentours, mais je suis ouvert à d'autres localisations selon les projets proposés.
+                </p>
             </section>
-        
+
             <section onclick="location.href='projet.html';">
-                <h2>Mes Projets</h2>
-                <p>Au cours de mon cursus en BUT Informatique et durant le lycée, j'ai dû réaliser différents projets. Ces projets sont tous en rapport avec l'informatique. Que ce soit des bases de données, de la programmation web ou même de la programmation en C, ces projets m'ont permis d'acquérir des compétences utiles.</p>
+                <h2 data-fr="Mes Projets" data-en="My Projects">Mes Projets</h2>
+                <p 
+                    data-fr="Au cours de mon cursus en BUT Informatique et durant le lycée, j'ai réalisé différents projets en lien avec l'informatique : bases de données, développement web, programmation en C... Ces projets m'ont permis d'acquérir des compétences utiles."
+                    data-en="During my Computer Science studies and high school, I completed various IT-related projects: databases, web development, C programming... These projects helped me acquire valuable skills.">
+                    Au cours de mon cursus en BUT Informatique et durant le lycée, j'ai réalisé différents projets en lien avec l'informatique : bases de données, développement web, programmation en C... Ces projets m'ont permis d'acquérir des compétences utiles.
+                </p>
             </section>
 
             <section onclick="location.href='meContacter.html';">
-                <h2>Me contacter</h2>
-                <p>Si vous voulez me contacter, que ce soit pour des questions, l'accès à des fichiers privés ou autre, envoyez-moi un mail via le formulaire.</p>
-            </section> 
-            
+                <h2 data-fr="Me contacter" data-en="Contact Me">Me contacter</h2>
+                <p 
+                    data-fr="Si vous souhaitez me contacter, que ce soit pour des questions, l'accès à des fichiers ou autre, envoyez-moi un mail via le formulaire."
+                    data-en="If you would like to contact me — whether for questions, file access, or anything else — send me an email via the form.">
+                    Si vous souhaitez me contacter, que ce soit pour des questions, l'accès à des fichiers ou autre, envoyez-moi un mail via le formulaire.
+                </p>
+            </section>
+
             <section onclick="window.location.href='autre/CV_Yannis.pdf';">
-                <h2>Mon CV</h2>
-                <p>Voici mon CV téléchargeable en pdf.</p>
+                <h2 data-fr="Mon CV" data-en="My Resume">Mon CV</h2>
+                <p data-fr="Voici mon CV téléchargeable en PDF." data-en="Here is my downloadable PDF resume.">Voici mon CV téléchargeable en PDF.</p>
             </section>
         </div>
     </main>
 
     <footer>
         <div>
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projet.html">Projets</a></li>
-                    <li><a href="meContacter.html">Contact</a></li>
-                    <li><a href="autre/CV_Yannis.pdf" target="_blank" download>Mon CV</a></li>
-                </ul>
+            <div>
+            <h3 data-fr="Navigation" data-en="Navigation">Navigation</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="meContacter.html">Contact</a></li>
+                <li><a href="autre/CV_Yannis.pdf" target="_blank" download>Mon CV</a></li>
+            </ul>
             </div>
 
-            <div class="footer-section">
-                <a href="meContacter.html"><h3>Contactez moi</h3></a>
-                <ul>
-                    <li>Lieu : Lannion / Bretagne</li>
-                    <li>Téléphone : <a href="tel:+33656803242">+33 6 56 80 32 42</a></li>
-                    <li>Email : <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a></li>
-                </ul>
+            <div>
+            <a href="meContacter.html">
+                <h3 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h3>
+            </a>
+            <ul>
+                <li data-fr="Lieu : Lannion / Bretagne" data-en="Location: Lannion / Brittany">Lieu : Lannion / Bretagne</li>
+                <li>
+                <span data-fr="Téléphone : " data-en="Phone: ">Téléphone : </span>
+                <a href="tel:+33656803242">+33 6 56 80 32 42</a>
+                </li>
+                <li>
+                <span data-fr="Email : " data-en="Email: ">Email : </span>
+                <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a>
+                </li>
+            </ul>
             </div>
 
-            <div class="footer-section">
-                <h3>Suivez-moi</h3>
-                <ul>
-                    <li><a href="https://github.com/yannislechevere" target="_blank"><img src="icons/iconGithub.png" alt="GitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="icons/iconLincedin.png" alt="LinkedIn"></a></li>
-                </ul>
+            <div>
+            <h3 data-fr="Suivez-moi" data-en="Follow Me">Suivez-moi</h3>
+            <ul>
+                <li><a href="https://github.com/yannislechevere" target="_blank"><img src="icons/iconGithub.png" alt="GitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="icons/iconLincedin.png" alt="LinkedIn"></a></li>
+            </ul>
             </div>
         </div>
 
         <div>
-            <p>© 2025 Yannis Le Chevere — Tous droits réservés.</p>
+            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">
+            © 2025 Yannis Le Chevère — Tous droits réservés.
+            </p>
         </div>
     </footer>
 
+    <script>
+        function changerLangue(langue) {
+        document.querySelectorAll('[data-fr]').forEach(el => {
+            el.textContent = el.getAttribute('data-' + langue);
+        });
+        document.documentElement.lang = langue;
+        }
+    </script>
 
-    <script src="script.js"></script>
 </body>
 </html>
