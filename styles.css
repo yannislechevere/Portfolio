@@ -96,10 +96,26 @@ header {
     height: 3em;
 }
 
+
+
 header nav {
     display: flex;
     gap: 20px;
+    align-items: center;
+    flex: 1;
 }
+
+header select {
+    margin-left: auto;
+    background-color: #4A90E2;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+}
+
 
 header a {
     text-decoration: none;
@@ -115,17 +131,21 @@ header a:hover {
     color: white;
 }
 
-header nav a:last-child {
+header select,
+header nav a:nth-child(4) {
     background-color: #4A90E2;
     color: white;
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    border: none;
 }
 
-header nav a:last-child:hover {
+header select:hover,
+header nav a:nth-child(4):hover {
     background-color: #1E2A38;
+    border: none;
 }
 
 header > button {
@@ -140,6 +160,11 @@ header > button {
     left: 0.5em;
     z-index: 2;
 }
+
+header select {
+    left: 0;
+}
+
 
 @media (max-width: 768px) {
     header > button {
@@ -176,6 +201,8 @@ header > button {
     header nav a:first-child {
         margin-top: 5em;
     }
+
+
 }
 
 /****************************************************************************************************************/
@@ -377,6 +404,7 @@ header > button {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 
 @media (max-width: 768px) {
     #projet > div > section {
@@ -804,33 +832,8 @@ footer > div:nth-child(2) p {
     font-size: 1.2em;
   }
 }
+
 * {
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
-}
-
-
-
-body[sombre] header {
-    background-color: #1E2A38;
-}
-
-body[sombre] header a {
-    color: white;
-}
-
-body[sombre] main {
-    background-color: #1E2A38;
-}
-
-body[sombre] p,
-body[sombre] h1,
-body[sombre] h2,
-body[sombre] h3, {
-    background-color: #1E2A38;
-}
-
-body[sombre] header button {
-    background-color: #e0e0e0;
-    color: #121212;
 }

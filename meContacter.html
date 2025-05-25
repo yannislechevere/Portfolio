@@ -12,11 +12,16 @@
     <header>
         <button aria-label="Menu">&#9776;</button>
         <nav>
-            <a href="index.html">Accueil</a>
-            <a href="projet.html">Projets</a>
-            <a href="meContacter.html">Contact</a>
-            <a href="autre/CV_Yannis.pdf" download>Mon CV</a>
+            <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+            <a href="projet.html" data-fr="Projets" data-en="Projects">Projets</a>
+            <a href="meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
+            <a href="autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
+            <select onchange="changerLangue(this.value)">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
         </nav>
+        
     </header>
 
 
@@ -95,7 +100,9 @@
             <p>© 2025 Yannis Le Chevère — Tous droits réservés.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    
+    <script src="scripts/langue.js"></script>
+    <script src="scripts/menu.js"></script>
 
 </body>
 </html>
