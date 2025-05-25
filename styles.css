@@ -105,7 +105,7 @@ header nav {
     flex: 1;
 }
 
-header select {
+header nav button {
     margin-left: auto;
     background-color: #4A90E2;
     color: white;
@@ -115,7 +115,6 @@ header select {
     border: none;
     transition: background-color 0.3s;
 }
-
 
 header a {
     text-decoration: none;
@@ -131,7 +130,7 @@ header a:hover {
     color: white;
 }
 
-header select,
+header nav button,
 header nav a:nth-child(4) {
     background-color: #4A90E2;
     color: white;
@@ -142,7 +141,7 @@ header nav a:nth-child(4) {
     border: none;
 }
 
-header select:hover,
+header nav button:hover,
 header nav a:nth-child(4):hover {
     background-color: #1E2A38;
     border: none;

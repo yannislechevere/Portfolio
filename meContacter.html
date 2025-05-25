@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - LE CHEVERE Yannis</title>
-    <link rel="icon" href="images/portraitYannis.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-fr="Contact - LE CHEVERE Yannis" data-en="Contact - Yannis LE CHEVERE">Contact - LE CHEVERE Yannis</title>
+    <link rel="icon" href="images/portraitYannis.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
     <header>
         <button aria-label="Menu">&#9776;</button>
         <nav>
@@ -16,51 +15,55 @@
             <a href="projet.html" data-fr="Projets" data-en="Projects">Projets</a>
             <a href="meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
             <a href="autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
-            <select onchange="changerLangue(this.value)">
-                <option value="fr">Français</option>
-                <option value="en">English</option>
-            </select>
+
+            <button id="langBtn" onclick="toggleLangue()">Français</button>
         </nav>
-        
     </header>
 
-
     <main id="contact">
-        <h1>Contactez-moi</h1>
+        <h1 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h1>
         <div>
             <div>
-                <h2>Informations de contact :</h2>
+                <h2 data-fr="Informations de contact :" data-en="Contact Information:">Informations de contact :</h2>
                 <section>
                     <a href="tel:+33656803242">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Téléphone">+33 6 56 80 32 42
+                        <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Téléphone" />
+                        <span data-fr="+33 6 56 80 32 42" data-en="+33 6 56 80 32 42">+33 6 56 80 32 42</span>
                     </a>
                     <a href="mailto:yannis.lechevere@outlook.fr">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email">yannis.lechevere@outlook.fr
+                        <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" />
+                        <span data-fr="yannis.lechevere@outlook.fr" data-en="yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</span>
                     </a>
                     <a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank" class="contact-link">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn">LinkedIn
+                        <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
+                        <span data-fr="LinkedIn" data-en="LinkedIn">LinkedIn</span>
                     </a>
                     <a href="https://www.instagram.com/yannislechevere/" target="_blank" class="contact-link">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram">Instagram
+                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
+                        <span data-fr="Instagram" data-en="Instagram">Instagram</span>
                     </a>
                 </section>
             </div>
             <div>
-                <h2>Localisation :</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84189.11579148426!2d-3.552139764295175!3d48.745418476365884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48122b8ac523c539%3A0x40ca5cd36e63400!2s22300%20Lannion!5e0!3m2!1sfr!2sfr!4v1747386646295!5m2!1sfr!2sfr"></iframe>
+                <h2 data-fr="Localisation :" data-en="Location:">Localisation :</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84189.11579148426!2d-3.552139764295175!3d48.745418476365884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48122b8ac523c539%3A0x40ca5cd36e63400!2s22300%20Lannion!5e0!3m2!1sfr!2sfr!4v1747386646295!5m2!1sfr!2sfr"
+                    loading="lazy"
+                    aria-label="Carte de Lannion"
+                ></iframe>
             </div>
             <div>
-                <h2>Envoyez-moi un message :</h2>
+                <h2 data-fr="Envoyez-moi un message :" data-en="Send me a message:">Envoyez-moi un message :</h2>
                 <form action="https://formspree.io/f/xnnddpol" method="POST">
                     <label>
-                        Votre email :
-                        <input type="email" name="email" required>
+                        <p data-fr="Votre email :" data-en="Your email:">Votre email :</p>
+                        <input type="email" name="email" required />
                     </label>
                     <label>
-                        Votre message :
+                        <p>Votre message :</p>
                         <textarea name="message" required></textarea>
                     </label>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit" data-fr="Envoyer" data-en="Send">Envoyer</button>
                 </form>
             </div>
         </div>
@@ -69,40 +72,53 @@
     <footer>
         <div>
             <div>
-                <h3>Navigation</h3>
+                <h3 data-fr="Navigation" data-en="Navigation">Navigation</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projet.html">Projets</a></li>
-                    <li><a href="meContacter.html">Contact</a></li>
-                    <li><a href="autre/CV_Yannis.pdf" target="_blank" download>Mon CV</a></li>
+                    <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="projet.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+                    <li><a href="meContacter.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    <li><a href="autre/CV_Yannis.pdf" target="_blank" download data-fr="Mon CV" data-en="My Resume">Mon CV</a></li>
                 </ul>
             </div>
 
             <div>
-                <a href="meContacter.html"><h3>Contactez-moi</h3></a>
+                <a href="meContacter.html"><h3 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h3></a>
                 <ul>
-                    <li>Lieu : Lannion / Bretagne</li>
-                    <li>Téléphone : <a href="tel:+33656803242">+33 6 56 80 32 42</a></li>
-                    <li>Email : <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a></li>
+                    <li data-fr="Lieu : Lannion / Bretagne" data-en="Location: Lannion / Brittany">Lieu : Lannion / Bretagne</li>
+                    <li>
+                        <span data-fr="Téléphone :" data-en="Phone:">Téléphone :</span>
+                        <a href="tel:+33656803242">+33 6 56 80 32 42</a>
+                    </li>
+                    <li>
+                        <span data-fr="Email :" data-en="Email:">Email :</span>
+                        <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a>
+                    </li>
                 </ul>
             </div>
 
             <div>
-                <h3>Suivez-moi</h3>
+                <h3 data-fr="Suivez-moi" data-en="Follow me">Suivez-moi</h3>
                 <ul>
-                    <li><a href="https://github.com/yannislechevere" target="_blank"><img src="icons/iconGithub.png" alt="GitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="icons/iconLincedin.png" alt="LinkedIn"></a></li>
+                    <li>
+                        <a href="https://github.com/yannislechevere" target="_blank">
+                            <img src="icons/iconGithub.png" alt="GitHub" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank">
+                            <img src="icons/iconLincedin.png" alt="LinkedIn" />
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div>
-            <p>© 2025 Yannis Le Chevère — Tous droits réservés.</p>
+            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">© 2025 Yannis Le Chevère — Tous droits réservés.</p>
         </div>
     </footer>
-    
+
     <script src="scripts/langue.js"></script>
     <script src="scripts/menu.js"></script>
-
 </body>
 </html>

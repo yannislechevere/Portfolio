@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - LE CHEVERE Yannis</title>
-    <link rel="icon" href="images/portraitYannis.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-fr="Projets - LE CHEVERE Yannis" data-en="Projects - Yannis LE CHEVERE">Projets - LE CHEVERE Yannis</title>
+    <link rel="icon" href="images/portraitYannis.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -16,188 +16,179 @@
             <a href="projet.html" data-fr="Projets" data-en="Projects">Projets</a>
             <a href="meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
             <a href="autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
-            <select onchange="changerLangue(this.value)">
-                <option value="fr">Français</option>
-                <option value="en">English</option>
-            </select>
+
+            <button id="langBtn" onclick="toggleLangue()">Français</button>
         </nav>
-        
     </header>
 
     <main id="projet">
-        <h1>Les projets que j'ai réalisés</h1>
+        <h1 data-fr="Les projets que j'ai réalisés" data-en="Projects I've worked on">Les projets que j'ai réalisés</h1>
         <div>
 
             <section>
-                <h2>Projets dans le cadre du BUT Informatique</h2>
-                <p>Dans le cadre du BUT Informatique, j'ai eu l'opportunité de réaliser différents projets touchant à divers domaines de l'informatique. De la programmation en C à l'analyse économique, écologique et numérique d'une entreprise, en passant par la création d'un site web répondant aux demandes d'un client. Ces projets m'ont permis de développer des compétences utiles et concrètes dans le domaine de l'informatique.</p>
+                <h2 data-fr="Projets dans le cadre du BUT Informatique" data-en="Projects as part of the Computer Science degree">Projets dans le cadre du BUT Informatique</h2>
+                <p data-fr="Dans le cadre du BUT Informatique, j'ai eu l'opportunité de réaliser différents projets touchant à divers domaines de l'informatique. De la programmation en C à l'analyse économique, écologique et numérique d'une entreprise, en passant par la création d'un site web répondant aux demandes d'un client. Ces projets m'ont permis de développer des compétences utiles et concrètes dans le domaine de l'informatique."
+                   data-en="As part of the Computer Science degree, I had the opportunity to work on various projects covering different areas of IT. From programming in C to economic, ecological, and digital analysis of a company, and even creating a website tailored to a client’s requests. These projects helped me develop useful and practical skills in IT.">
+                   Dans le cadre du BUT Informatique, j'ai eu l'opportunité de réaliser différents projets touchant à divers domaines de l'informatique. De la programmation en C à l'analyse économique, écologique et numérique d'une entreprise, en passant par la création d'un site web répondant aux demandes d'un client. Ces projets m'ont permis de développer des compétences utiles et concrètes dans le domaine de l'informatique.
+                </p>
             </section>
 
-            <section onclick="location.href='projets/projet1.html';">
-                <img src="images/projet1.png" alt="snake">
+            <section onclick="location.href='projets/projet1.html';" style="cursor:pointer;">
+                <img src="images/projet1.png" alt="snake" />
                 <div>
-                    <h2>Le jeu du Snake</h2>
-                    <p>Programmation du jeu Snake de manière incrémentale. Plusieurs versions du programme ont été développées, chacune enrichissant la précédente.</p>
+                    <h2 data-fr="Le jeu du Snake" data-en="The Snake Game">Le jeu du Snake</h2>
+                    <p data-fr="Programmation du jeu Snake de manière incrémentale. Plusieurs versions du programme ont été développées, chacune enrichissant la précédente."
+                       data-en="Incremental programming of the Snake game. Several versions of the program were developed, each improving upon the previous one.">
+                       Programmation du jeu Snake de manière incrémentale. Plusieurs versions du programme ont été développées, chacune enrichissant la précédente.
+                    </p>
                 </div>
                 <div>
-                    <a href="https://devdocs.io/c/"><img src="icons/iconC.png"></a>
-                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png"></a>
-                    <a href="https://www.doxygen.nl/"><img src="icons/iconDoxygen.avif"></a>
-                    <a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="icons/iconGoogleSheets.png"></a>
-                </div>
-            </section>
-
-            <section onclick="location.href='projets/projet2.html';">
-                <img src="images/projet2.png">
-                <div>
-                    <h2>Le Snake autonome</h2>
-                    <p>Programmation du jeu Snake afin de rendre le serpent autonome, c'est-à-dire qu'il se déplace automatiquement pour manger les pommes le plus efficacement possible. Différentes versions ont été développées, chacune ajoutant de nouvelles fonctionnalités.</p>
-                </div>
-                <div>
-                    <a href="https://devdocs.io/c/"><img src="icons/iconC.png"></a>
-                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png"></a>
-                    <a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="icons/iconGoogleSheets.png"></a>
-                    <a href="https://docs.github.com/fr"><img src="icons/iconGithub.png"></a>
+                    <a href="https://devdocs.io/c/"><img src="icons/iconC.png" alt="C Language" /></a>
+                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png" alt="Visual Studio Code" /></a>
+                    <a href="https://www.doxygen.nl/"><img src="icons/iconDoxygen.avif" alt="Doxygen" /></a>
+                    <a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="icons/iconGoogleSheets.png" alt="Google Sheets" /></a>
                 </div>
             </section>
 
-            <section onclick="location.href='projets/projet3.html';">
-                <img src="images/projet3.png">
+            <section onclick="location.href='projets/projet2.html';" style="cursor:pointer;">
+                <img src="images/projet2.png" alt="snake autonome" />
                 <div>
-                    <h2>Systèmes informatiques</h2>
-                    <p>Réalisation d'une chaîne de traitement de données en Bash et PHP, avec Docker, pour remplir le cahier des charges d'une équipe de développement web sur les Jeux Olympiques.</p>
+                    <h2 data-fr="Le Snake autonome" data-en="The Autonomous Snake">Le Snake autonome</h2>
+                    <p data-fr="Programmation du jeu Snake afin de rendre le serpent autonome, c'est-à-dire qu'il se déplace automatiquement pour manger les pommes le plus efficacement possible. Différentes versions ont été développées, chacune ajoutant de nouvelles fonctionnalités."
+                       data-en="Programming the Snake game so the snake moves autonomously, automatically eating apples as efficiently as possible. Various versions were developed, each adding new features.">
+                       Programmation du jeu Snake afin de rendre le serpent autonome, c'est-à-dire qu'il se déplace automatiquement pour manger les pommes le plus efficacement possible. Différentes versions ont été développées, chacune ajoutant de nouvelles fonctionnalités.
+                    </p>
                 </div>
                 <div>
-                    <a href="https://www.php.net/manual/fr/index.php"><img src="icons/iconPhp.png"></a>
-                    <a href="https://devdocs.io/bash/"><img src="icons/iconBash.png"></a>
-                    <a href="https://docs.docker.com/"><img src="icons/iconDocker.png"></a>   
-                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="icons/iconHtml.png"></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="icons/iconCss.png"></a>
-                    <a href="https://docs.getutm.app/"><img src="icons/iconUtm.png"></a>
-                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png"></a>
+                    <a href="https://devdocs.io/c/"><img src="icons/iconC.png" alt="C Language" /></a>
+                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png" alt="Visual Studio Code" /></a>
+                    <a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="icons/iconGoogleSheets.png" alt="Google Sheets" /></a>
+                    <a href="https://docs.github.com/fr"><img src="icons/iconGithub.png" alt="GitHub" /></a>
+                </div>
+            </section>
+
+            <section onclick="location.href='projets/projet3.html';" style="cursor:pointer;">
+                <img src="images/projet3.png" alt="systèmes informatiques" />
+                <div>
+                    <h2 data-fr="Systèmes informatiques" data-en="IT Systems">Systèmes informatiques</h2>
+                    <p data-fr="Réalisation d'une chaîne de traitement de données en Bash et PHP, avec Docker, pour remplir le cahier des charges d'une équipe de développement web sur les Jeux Olympiques."
+                       data-en="Creation of a data processing pipeline in Bash and PHP, using Docker, to meet the requirements of a web development team working on the Olympic Games.">
+                       Réalisation d'une chaîne de traitement de données en Bash et PHP, avec Docker, pour remplir le cahier des charges d'une équipe de développement web sur les Jeux Olympiques.
+                    </p>
+                </div>
+                <div>
+                    <a href="https://www.php.net/manual/fr/index.php"><img src="icons/iconPhp.png" alt="PHP" /></a>
+                    <a href="https://devdocs.io/bash/"><img src="icons/iconBash.png" alt="Bash" /></a>
+                    <a href="https://docs.docker.com/"><img src="icons/iconDocker.png" alt="Docker" /></a>   
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="icons/iconHtml.png" alt="HTML" /></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="icons/iconCss.png" alt="CSS" /></a>
+                    <a href="https://docs.getutm.app/"><img src="icons/iconUtm.png" alt="UTM" /></a>
+                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png" alt="Visual Studio Code" /></a>
                 </div>         
             </section>
 
-            <section onclick="location.href='projets/projet4.html';">
-                <img src="images/projet4.jpg">
+            <section onclick="location.href='projets/projet4.html';" style="cursor:pointer;">
+                <img src="images/projet4.jpg" alt="gestion ligue football" />
                 <div>
-                    <h2>Gestion d'une ligue de football</h2>
-                    <p>Conception et modélisation d'une base de données avec un diagramme de classes. Traduction du diagramme vers un modèle relationnel puis implantation en Tutorial D.</p>
+                    <h2 data-fr="Gestion d'une ligue de football" data-en="Football League Management">Gestion d'une ligue de football</h2>
+                    <p data-fr="Conception et modélisation d'une base de données avec un diagramme de classes. Traduction du diagramme vers un modèle relationnel puis implantation en Tutorial D."
+                       data-en="Design and modeling of a database with a class diagram. Translation of the diagram into a relational model and implementation in Tutorial D.">
+                       Conception et modélisation d'une base de données avec un diagramme de classes. Traduction du diagramme vers un modèle relationnel puis implantation en Tutorial D.
+                    </p>
                 </div>
                 <div>
-                    <a href="https://www.uml.org/"><img src="icons/iconUml.png"></a>
-                    <a href="https://www.visual-paradigm.com/support/documents/"><img src="icons/iconVisualParadigm.png"></a>
-                    <a href="https://workspace.google.com/intl/fr/products/docs/"><img src="icons/iconGoogleDocs.png"></a>
-                    <a href="https://reldb.org/c/"><img src="icons/iconRel.jpeg"></a>
-                </div>
-            </section>
-
-            <section onclick="location.href='projets/projet5.html';">
-                <img src="images/projet5.png">
-                <div>
-                    <h2>Site web sur les JO</h2>
-                    <p>Réalisation d'un site web sur le thème des Jeux Olympiques en groupe avec une procédure de conception rigoureuse.</p>
-                </div>
-                <div>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="icons/iconHtml.png"></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="icons/iconCss.png"></a>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img src="icons/iconJavaScript.png"></a>
-                    <a href="https://help.figma.com/hc/fr"><img src="icons/iconFigma.png"></a>
-                    <a href="https://docs.github.com/fr"><img src="icons/iconGithub.png"></a>
-                    <a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="icons/iconGoogleSheets.png"></a>
-                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png"></a>
+                    <a href="https://www.uml.org/"><img src="icons/iconUml.png" alt="UML" /></a>
+                    <a href="https://www.visual-paradigm.com/support/documents/"><img src="icons/iconVisualParadigm.png" alt="Visual Paradigm" /></a>
+                    <a href="https://workspace.google.com/intl/fr/products/docs/"><img src="icons/iconGoogleDocs.png" alt="Google Docs" /></a>
+                    <a href="https://reldb.org/c/"><img src="icons/iconRel.jpeg" alt="Relational Database" /></a>
                 </div>
             </section>
 
-            <section onclick="location.href='projets/projet6.html';">
-                <img src="images/projet6.png">
+            <section onclick="location.href='projets/projet5.html';" style="cursor:pointer;">
+                <img src="images/projet5.png" alt="site web jo" />
                 <div>
-                    <h2>SWOT et RSE de Coca-Cola</h2>
-                    <p>Étude de l'impact économique et écologique de l'entreprise Coca-Cola à travers une analyse approfondie de ses pratiques et de son modèle économique.</p>
+                    <h2 data-fr="Site web sur les JO" data-en="Website about the Olympic Games">Site web sur les JO</h2>
+                    <p data-fr="Réalisation d'un site web sur le thème des Jeux Olympiques en groupe avec une procédure de conception rigoureuse."
+                       data-en="Development of a website themed on the Olympic Games in a group, following a rigorous design process.">
+                       Réalisation d'un site web sur le thème des Jeux Olympiques en groupe avec une procédure de conception rigoureuse.
+                    </p>
                 </div>
                 <div>
-                    <a href="https://workspace.google.com/intl/fr/products/docs/"><img src="icons/iconGoogleDocs.png"></a>
-                    <a href="https://www.canva.com/fr_fr/docs/"><img src="icons/iconCanva.png"></a>
-                    <a href="https://www.atlassian.com/fr/software/jira"><img src="icons/iconJira.svg"></a>
-                </div>
-            </section>
-
-            <section>
-                <h2>Projets personnels ou réalisés au lycée</h2>
-                <p>Au lycée, grâce à la spécialité NSI, j'ai eu l'occasion de réaliser des projets assez libres qui m'ont permis de découvrir et d'acquérir des bases dans différents domaines de l'informatique.</p>    
-            </section>
-            
-            <section>
-                <img src="images/brawlStar.webp">
-                <div>
-                    <h2>Site web sur Brawl Stars</h2>
-                    <p>Réalisation d'un site autour du jeu Brawl Stars, combinant HTML, CSS et un peu de Python pour intégrer une base de données.</p>
-                </div>
-                <div>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="icons/iconHtml.png"></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="icons/iconCss.png"></a>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img src="icons/iconJavaScript.png"></a>
-                    <a href="https://docs.python.org/3/"><img src="icons/iconPython.png"></a>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="icons/iconHtml.png" alt="HTML" /></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="icons/iconCss.png" alt="CSS" /></a>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img src="icons/iconJavaScript.png" alt="JavaScript" /></a>
+                    <a href="https://help.figma.com/hc/fr"><img src="icons/iconFigma.png" alt="Figma" /></a>
+                    <a href="https://docs.github.com/fr"><img src="icons/iconGithub.png" alt="GitHub" /></a>
+                    <a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="icons/iconGoogleSheets.png" alt="Google Sheets" /></a>
+                    <a href="https://code.visualstudio.com/docs"><img src="icons/iconVisualStudioCode.png" alt="Visual Studio Code" /></a>
                 </div>
             </section>
 
-            <section>
-                <img src="images/nasa.jpeg">
+            <section onclick="location.href='projets/projet6.html';" style="cursor:pointer;">
+                <img src="images/projet6.png" alt="swot coca cola" />
                 <div>
-                    <h2>Site internet sur la NASA</h2>
-                    <p>Projet personnel visant à explorer les données de la NASA à travers une interface web attractive et interactive en utilisant des APIs.</p>
+                    <h2 data-fr="SWOT et RSE de Coca-Cola" data-en="SWOT and CSR of Coca-Cola">SWOT et RSE de Coca-Cola</h2>
+                    <p data-fr="Étude de l'impact économique et écologique de l'entreprise Coca-Cola à travers une analyse approfondie de ses pratiques et de son modèle économique."
+                       data-en="Study of Coca-Cola's economic and ecological impact through an in-depth analysis of its practices and business model.">
+                       Étude de l'impact économique et écologique de l'entreprise Coca-Cola à travers une analyse approfondie de ses pratiques et de son modèle économique.
+                    </p>
                 </div>
                 <div>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="icons/iconHtml.png"></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="icons/iconCss.png"></a>
+                    <a href="https://workspace.google.com/intl/fr/products/docs/"><img src="icons/iconGoogleDocs.png" alt="Google Docs" /></a>
+                    <a href="https://www.canva.com/fr_fr/docs/"><img src="icons/iconCanva.png" alt="Canva" /></a>
+                    <a href="https://www.atlassian.com/fr/software/jira"><img src="icons/iconJira.svg" alt="Jira" /></a>
                 </div>
             </section>
 
-            <section>
-                <img src="images/nasa.jpeg">
-                <div>
-                    <h2>Jeu du pendu</h2>
-                    <p>Création du jeu du pendu en ligne de commande, sans interface graphique, en Python.</p>
-                </div>
-                <div>
-                    <a href="https://docs.python.org/3/"><img src="icons/iconPython.png"></a>
-                </div>
-            </section>
         </div>
     </main>
 
     <footer>
         <div>
             <div>
-                <h3>Navigation</h3>
+                <h3 data-fr="Navigation" data-en="Navigation">Navigation</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projet.html">Projets</a></li>
-                    <li><a href="meContacter.html">Contact</a></li>
-                    <li><a href="autre/CV_Yannis.pdf" target="_blank" download>Mon CV</a></li>
+                    <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="projet.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+                    <li><a href="meContacter.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    <li><a href="autre/CV_Yannis.pdf" target="_blank" download data-fr="Mon CV" data-en="My Resume">Mon CV</a></li>
                 </ul>
             </div>
 
             <div>
-                <a href="meContacter.html"><h3>Contactez-moi</h3></a>
+                <a href="meContacter.html"><h3 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h3></a>
                 <ul>
-                    <li>Lieu : Lannion / Bretagne</li>
-                    <li>Téléphone : <a href="tel:+33656803242">+33 6 56 80 32 42</a></li>
-                    <li>Email : <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a></li>
+                    <li data-fr="Lieu : Lannion / Bretagne" data-en="Location: Lannion / Brittany">Lieu : Lannion / Bretagne</li>
+                    <li>
+                        <span data-fr="Téléphone :" data-en="Phone:">Téléphone :</span>
+                        <a href="tel:+33656803242">+33 6 56 80 32 42</a>
+                    </li>
+                    <li>
+                        <span data-fr="Email :" data-en="Email:">Email :</span>
+                        <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a>
+                    </li>
                 </ul>
             </div>
 
             <div>
-                <h3>Suivez-moi</h3>
+                <h3 data-fr="Suivez-moi" data-en="Follow me">Suivez-moi</h3>
                 <ul>
-                    <li><a href="https://github.com/yannislechevere" target="_blank"><img src="icons/iconGithub.png" alt="GitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="icons/iconLincedin.png" alt="LinkedIn"></a></li>
+                    <li>
+                        <a href="https://github.com/yannislechevere" target="_blank">
+                            <img src="icons/iconGithub.png" alt="GitHub" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank">
+                            <img src="icons/iconLincedin.png" alt="LinkedIn" />
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div>
-            <p>© 2025 Yannis Le Chevère — Tous droits réservés.</p>
+            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">© 2025 Yannis Le Chevère — Tous droits réservés.</p>
         </div>
     </footer>
 
