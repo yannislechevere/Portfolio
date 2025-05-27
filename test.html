@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Carousel Automatique</title>
+  <style>
+    
+    .carousel-container {
+      width: 25em;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      animation: slide 2s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 100%;
+      
+    }
+
+    /* Animation keyframes */
+    @keyframes slide {
+      0%    { transform: translateX(0%); }
+      33%   { transform: translateX(0%); }
+      34%   { transform: translateX(-100%); }
+      66%   { transform: translateX(-100%); }
+      67%   { transform: translateX(-200%); }
+      100%  { transform: translateX(-200%); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carousel-container">
+    <div class="slides">
+      <div class="slide"><img src="images/projet1.png" alt="Image 1"></div>
+      <div class="slide"><img src="images/projet3.png" alt="Image 2"></div>
+      <div class="slide"><img src="images/projet4.jpg" alt="Image 3"></div>
+    </div>
+  </div>
+
+</body>
+</html>
