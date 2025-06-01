@@ -698,6 +698,21 @@ header select {
 #proj section p a:hover::after {
     width: 100%;
 }
+   #proj section > div img,
+.carousel-container img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    #proj section:first-child,
+    #proj section:nth-child(2),
+    #proj section:nth-child(3) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+ 
+}
 
 
 
