@@ -11,11 +11,14 @@
     <header>
         <button aria-label="Menu">&#9776;</button>
         <nav>
-            <a href="../index.html">Accueil</a>
-            <a href="../projet.html">Projets</a>
-            <a href="../meContacter.html">Contact</a>
-            <a href="../autre/CV_Yannis.pdf" download>Mon CV</a>
+            <a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+            <a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a>
+            <a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
+            <a href="../autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
+            
+            <button id="langBtn" onclick="toggleLangue()">Français</button>
         </nav>
+        
     </header>
 
     <main id="proj">
@@ -88,57 +91,54 @@
     <footer>
         <div>
             <div>
-                <h3>Navigation</h3>
+                <h3 data-fr="Navigation" data-en="Navigation">Navigation</h3>
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../projet.html">Projets</a></li>
-                    <li><a href="../meContacter.html">Contact</a></li>
-                    <li><a href="../autre/CV_Yannis.pdf" target="_blank" download>Mon CV</a></li>
+                    <li><a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+                    <li><a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    <li><a href="../autre/CV_Yannis.pdf" target="_blank" download data-fr="Mon CV" data-en="My Resume">Mon CV</a></li>
                 </ul>
             </div>
 
             <div>
-                <a href="../meContacter.html"><h3>Contactez-moi</h3></a>
+                <a href="../meContacter.html"><h3 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h3></a>
                 <ul>
-                    <li>Lieu : Lannion / Bretagne</li>
-                    <li>Téléphone : <a href="tel:+33656803242">+33 6 56 80 32 42</a></li>
-                    <li>Email : <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a></li>
+                    <li data-fr="Lieu : Lannion / Bretagne" data-en="Location: Lannion / Brittany">Lieu : Lannion / Bretagne</li>
+                    <li>
+                        <span data-fr="Téléphone :" data-en="Phone:">Téléphone :</span>
+                        <a href="tel:+33656803242">+33 6 56 80 32 42</a>
+                    </li>
+                    <li>
+                        <span data-fr="Email :" data-en="Email:">Email :</span>
+                        <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a>
+                    </li>
                 </ul>
             </div>
 
             <div>
-                <h3>Suivez-moi</h3>
+                <h3 data-fr="Suivez-moi" data-en="Follow me">Suivez-moi</h3>
                 <ul>
-                    <li><a href="https://github.com/yannislechevere" target="_blank"><img src="../icons/iconGithub.png" alt="GitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="../icons/iconLincedin.png" alt="LinkedIn"></a></li>
+                    <li>
+                        <a href="https://github.com/yannislechevere" target="_blank">
+                            <img src="../icons/iconGithub.png" alt="GitHub" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank">
+                            <img src="../icons/iconLincedin.png" alt="LinkedIn" />
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div>
-            <p>© 2025 Yannis Le Chevère — Tous droits réservés.</p>
+            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">© 2025 Yannis Le Chevère — Tous droits réservés.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
-<script>
-  const buttons = document.querySelectorAll("section > button");
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const content = button.nextElementSibling;
-      const isOpen = content.style.maxHeight;
-
-      // Fermer tous les autres
-      document.querySelectorAll("section > div").forEach(div => {
-        if (div !== content) div.style.maxHeight = null;
-      });
-
-      // Toggle celui cliqué
-      content.style.maxHeight = isOpen ? null : content.scrollHeight + "px";
-    });
-  });
-</script>
-
+    <script src="../scripts/langue.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/deroule.js"></script>
 
 
 </body>

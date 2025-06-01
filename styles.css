@@ -33,44 +33,39 @@ p {
     text-align: justify;
 }
 
-
-
-
 main {
     background-color: #F3F4F6;
     width: 75%;
     margin: 0px auto;
     padding: 5%;
 }
+
 @keyframes  animate-bg {
     100% {
       background-position: 50px 50px;
     }
-  }
+}
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.5em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  h3 {
-    font-size: 1.2em;
-  }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
 
-  main {
-    width: 90%;
-    padding: 1em;
-  }
+    main {
+        width: 90%;
+        padding: 1em;
+    }
 
-  header nav a {
-    text-align: center;
-    font-size: 1.1em;
-  }
-
-
-
+    header nav a {
+        text-align: center;
+        font-size: 1.1em;
+    }
 }
 
 
@@ -88,15 +83,13 @@ header {
     position: sticky;
     top: 0px;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.2); /* Couleur blanche translucide */
-    backdrop-filter: blur(10px); /* Flou arrière-plan */
-    -webkit-backdrop-filter: blur(10px); /* Support Safari */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 3em;
 }
-
-
 
 header nav {
     display: flex;
@@ -166,6 +159,7 @@ header select {
 
 
 @media (max-width: 768px) {
+
     header > button {
         display: block;
     }
@@ -201,13 +195,11 @@ header select {
         margin-top: 5em;
     }
 
-
 }
 
 /****************************************************************************************************************/
 /*                                              Page Index                                                      */
 /****************************************************************************************************************/
-
 
 #index > div {
     display: grid;
@@ -555,6 +547,7 @@ header select {
 
 
 @media (max-width: 768px) {
+
     #contact > div > div:first-child,
     #contact > div > div:nth-child(2),
     #contact > div > div:nth-child(3) {
@@ -567,20 +560,16 @@ header select {
     }   
 
     #contact > div {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
 }
 
 
-
-
-
-
-/*****************/
-/*--Projet n°1--**/
-/*****************/
+/****************************************************************************************************************/
+/*                                          Les pages Projets                                                   */
+/****************************************************************************************************************/
 
 #proj > div {
     display: grid;
@@ -709,6 +698,9 @@ header select {
 #proj section p a:hover::after {
     width: 100%;
 }
+
+
+
 /****************************************************************************************************************/
 /*                                                  Footer                                                      */
 /****************************************************************************************************************/
@@ -845,7 +837,7 @@ footer > div:nth-child(2) p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto; /* centrer avec auto + ajouter un peu d'espace */
+    margin: 0px auto; /* centrer avec auto + ajouter un peu d'espace */
     max-width: 100%; /* s'assurer qu'il ne dépasse pas */
 }
 
@@ -859,15 +851,25 @@ footer > div:nth-child(2) p {
     width: 100%;
     flex-shrink: 0;
 }
-    
 
-.slides1 {
+.slides2 {
     display: flex;
     width: 100%;
-    animation: slide1 10s infinite;
+    animation: slide2 10s infinite;
 }
 
-.slide1 {
+.slide2 {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slides3 {
+    display: flex;
+    width: 100%;
+    animation: slide3 10s infinite;
+}
+
+.slide3 {
     width: 100%;
     flex-shrink: 0;
 }
@@ -875,23 +877,34 @@ footer > div:nth-child(2) p {
 
 
 
-@keyframes slide1 {
+@keyframes slide2 {
+    0%    { transform: translateX(0%); }
+    45%   { transform: translateX(0%); }
+    50%   { transform: translateX(-100%); }
+    95%   { transform: translateX(-100%); }
+    100%  { transform: translateX(0%); }
+}
+
+@keyframes slide3 {
   0%    { transform: translateX(0%); }
-  45%   { transform: translateX(0%); }
-  50%   { transform: translateX(-100%); }
-  95%   { transform: translateX(-100%); }
+  30%   { transform: translateX(0%); }
+  33.33% { transform: translateX(-100%); }
+  63.33% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  96.66% { transform: translateX(-200%); }
   100%  { transform: translateX(0%); }
 }
 
+
 @keyframes slide5 {
-      0%    { transform: translateX(0%); }
-      20%   { transform: translateX(0%); }
-      25%   { transform: translateX(-100%); }
-      40%   { transform: translateX(-100%); }
-      45%   { transform: translateX(-200%); }
-      60%   { transform: translateX(-200%); }
-      65%   { transform: translateX(-300%); }
-      80%   { transform: translateX(-300%); }
-      85%   { transform: translateX(-400%); }
-      100%  { transform: translateX(-400%); }
-    }
+    0%    { transform: translateX(0%); }
+    20%   { transform: translateX(0%); }
+    25%   { transform: translateX(-100%); }
+    40%   { transform: translateX(-100%); }
+    45%   { transform: translateX(-200%); }
+    60%   { transform: translateX(-200%); }
+    65%   { transform: translateX(-300%); }
+    80%   { transform: translateX(-300%); }
+    85%   { transform: translateX(-400%); }
+    100%  { transform: translateX(-400%); }
+}
