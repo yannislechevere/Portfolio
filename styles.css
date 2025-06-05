@@ -633,7 +633,7 @@ header select {
 #proj section > div p {
     padding-top: 1em;
 }
-
+#proj section > div video,
 #proj section > div img {
     max-width: 60em;
     max-height: 30em;
