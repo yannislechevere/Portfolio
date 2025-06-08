@@ -1,110 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Le jeu du Snake - LE CHEVERE Yannis</title>
-  <link rel="icon" href="../images/portraitYannis.png" type="image/png">
-  <link rel="stylesheet" href="../styles.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-fr="Le jeu du Snake - Yannis Le Chevère" data-en="The Snake Game - Yannis Le Chevère">Le jeu du Snake - Yannis Le Chevère</title>
+    <link rel="icon" href="../images/portraitYannis.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+    </head>
 <body>
     <header>
         <button aria-label="Menu">&#9776;</button>
         <nav>
-            <a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-            <a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a>
-            <a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
-            <a href="../autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
-            
-            <button id="langBtn" onclick="toggleLangue()">Français</button>
+        <a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a>
+        <a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
+        <a href="../autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
+        <button id="langBtn" onclick="toggleLangue()" data-fr="Français" data-en="English">Français</button>
         </nav>
-        
     </header>
 
     <main id="proj">
-        <h1>Le jeu du Snake</h1>
+        <h1 data-fr="Le jeu du Snake" data-en="The Snake Game">Le jeu du Snake</h1>
 
-        <p>
-        Ce projet a été réalisé individuellement en C, sous forme d'une version console. L'objectif est d'implémenter plusieurs versions du jeu Snake, chacune ajoutant des fonctionnalités progressives.
+        <p data-fr="Ce projet a été réalisé individuellement en langage C, sous forme d'application console. L'objectif était d'implémenter plusieurs versions progressives du jeu classique Snake."
+        data-en="This project was carried out individually in the C language as a console application. The goal was to implement several progressive versions of the classic Snake game.">Ce projet a été réalisé individuellement en langage C, sous forme d'application console. L'objectif était d'implémenter plusieurs versions progressives du jeu classique Snake.
         </p>
+
         <div>
             <section>
-                <h2>Compétence n°1 : Implémentation d'un besoin client</h2>
-                <p>Ce projet s'inscrit dans la <strong>compétence 1</strong> du <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank">programme du BUT Informatique</a> : développer une solution informatique adaptée à un besoin client.</p>
+                <h2 data-fr="Compétence n°1 : Répondre à un besoin client" data-en="Skill No. 1: Meeting a Client's Requirement">
+                    Compétence n°1 : Répondre à un besoin client
+                </h2>
+                <p data-fr="Ce projet correspond à la <strong>compétence 1</strong> du programme BUT Informatique : développer une solution logicielle adaptée aux besoins d’un client."
+                    data-en="This project corresponds to <strong>Skill 1</strong> of the BUT Computer Science program: developing a software solution tailored to a client's needs.">
+                    Ce projet correspond à la <strong>compétence 1</strong> du programme BUT Informatique : développer une solution logicielle adaptée aux besoins d’un client.
+                </p>
+                <p><a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank">Programme BUT Informatique</a></p>
             </section>
 
             <section>
-                <h2>Les outils utilisés :</h2>
+                <h2 data-fr="Les outils utilisés" data-en="Tools Used">Les outils utilisés</h2>
                 <ul>
-                    <li><a href="https://devdocs.io/c/"><img src="../icons/iconC.png">Langage C</a> (pour programmer les versions)</li>
-                    <li><a href="https://code.visualstudio.com/docs"><img src="../icons/iconVisualStudioCode.png">Visual Studio Code</a> (pour éditer le code)</li>
-                    <li><a href="https://www.doxygen.nl/"><img src="../icons/iconDoxygen.avif">Doxygen</a> (pour la documentation du code)</li>
-                    <li><a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="../icons/iconGoogleSheets.png">Google Sheets</a> (pour les cahiers de tests)</li>
+                    <li>
+                    <a href="https://devdocs.io/c/">
+                        <img src="../icons/iconC.png" alt="Icone C">
+                        <span data-fr="Langage C" data-en="C Language">Langage C</span>
+                    </a> (programmation)
+                    </li>
+                    <li>
+                    <a href="https://code.visualstudio.com/docs">
+                        <img src="../icons/iconVisualStudioCode.png" alt="Icone VS Code">
+                        <span data-fr="Visual Studio Code" data-en="Visual Studio Code">Visual Studio Code</span>
+                    </a> (IDE)
+                    </li>
+                    <li>
+                    <a href="https://www.doxygen.nl/">
+                        <img src="../icons/iconDoxygen.avif" alt="Icone Doxygen">
+                        <span data-fr="Doxygen" data-en="Doxygen">Doxygen</span>
+                    </a> (documentation)
+                    </li>
+                    <li>
+                    <a href="https://workspace.google.com/products/sheets/">
+                        <img src="../icons/iconGoogleSheets.png" alt="Icone Google Sheets">
+                        <span data-fr="Google Sheets" data-en="Google Sheets">Google Sheets</span>
+                    </a> (planification des tests)
+                    </li>
                 </ul>
-            </section>  
+            </section>
 
             <section>
-                <h2>Les étapes du projet</h2>
-                <p>
-                    Le développement s'est déroulé en 4 versions successives et une documentation de la derniere version. Cliquez sur chaque version pour voir les détails.
+                <h2 data-fr="Les versions du projet" data-en="Project Versions">Les versions du projet</h2>
+                <p data-fr="Le développement a été structuré en quatre versions successives, avec documentation de la dernière."
+                    data-en="The development was structured in four successive versions, with documentation of the final one.">
+                    Le développement a été structuré en quatre versions successives, avec documentation de la dernière.
                 </p>
 
-                <button>Version 1 : Déplacement simple</button>
+                <button data-fr="Version 1 : Déplacement simple" data-en="Version 1: Basic Movement">Version 1 : Déplacement simple</button>
                 <div>
-                    <p>
-                    Le serpent de taille fixe se déplace automatiquement vers la droite. L'utilisateur définit sa position initiale via les coordonnées (x, y). Le jeu commence ensuite avec un affichage dynamique dans le terminal.
+                    <p data-fr="Le serpent de taille fixe se déplace automatiquement vers la droite. L’utilisateur définit sa position initiale (x, y). Le jeu s’affiche dynamiquement dans le terminal."
+                    data-en="The fixed-size snake moves automatically to the right. The user sets its initial (x, y) position. The game is displayed dynamically in the terminal.">
+                    Le serpent de taille fixe se déplace automatiquement vers la droite. L’utilisateur définit sa position initiale (x, y). Le jeu s’affiche dynamiquement dans le terminal.
                     </p>
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjVvNm5xc3ZsY2ptcm5rM291ZjNycnVqdnVzYWlldW9oNjBkZ2pnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bY5lONYeiav6zUqkJF/giphy.gif" alt="Démo de la version 1 du Snake">
+                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjVvNm5xc3ZsY2ptcm5rM291ZjNycnVqdnVzYWlldW9oNjBkZ2pnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bY5lONYeiav6zUqkJF/giphy.gif" alt="Démo version 1">
                 </div>
 
-                <button>Version 2 : Contrôle du serpent</button>
+                <button data-fr="Version 2 : Contrôle du serpent" data-en="Version 2: Snake Control">Version 2 : Contrôle du serpent</button>
                 <div>
-                    <p>
-                    Le serpent peut se déplacer dans toutes les directions avec les touches <strong>ZQSD</strong>. Le demi-tour est interdit. Le serpent peut se croiser et sortir de l’écran.
+                    <p data-fr="Le serpent se déplace dans les quatre directions avec les touches Z, Q, S, D. Les demi-tours sont interdits. Il peut se croiser et sortir de l’écran."
+                    data-en="The snake can move in all four directions with the Z, Q, S, D keys. U-turns are disallowed. It can cross itself and exit the screen.">
+                    Le serpent se déplace dans les quatre directions avec les touches Z, Q, S, D. Les demi-tours sont interdits. Il peut se croiser et sortir de l’écran.
                     </p>
-                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5kemcxYjMyZ3JmZXQycW5uMGpmNm4yMm1jNGtoeHRyd2NqNzE2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WANqF0pp9L7ziMx0hQ/giphy.gif" alt="Démo de la version 2 du Snake">
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5kemcxYjMyZ3JmZXQycW5uMGpmNm4yMm1jNGtoeHRyd2NqNzE2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WANqF0pp9L7ziMx0hQ/giphy.gif" alt="Démo version 2">
                 </div>
 
-                <button>Version 3 : Limites et obstacles</button>
+                <button data-fr="Version 3 : Obstacles et bordures" data-en="Version 3: Obstacles and Boundaries">Version 3 : Obstacles et bordures</button>
                 <div>
-                    <p>
-                    Le plateau de 80x40 est délimité par des bordures. Le serpent meurt s’il touche un mur. Quatre pavés d’obstacles sont générés aléatoirement dans le cadre sans toucher les bords.
+                    <p data-fr="Le plateau 80×40 est encadré par des murs. Le serpent meurt s’il touche un mur. Quatre blocs obstacles sont générés aléatoirement à l’intérieur sans toucher les bords."
+                    data-en="The 80×40 board is bounded by walls. The snake dies if it hits a wall. Four obstacle blocks are randomly generated inside without touching the edges.">
+                    Le plateau 80×40 est encadré par des murs. Le serpent meurt s’il touche un mur. Quatre blocs obstacles sont générés aléatoirement à l’intérieur sans toucher les bords.
                     </p>
-                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2ZvaWxvZ2E4Mm96OTYwNXBhMWpjYWpiZnduYTR3YjJnNWliMG80cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/osjObDaNrdyTRoQeNQ/giphy.gif" alt="Démo de la version 3 du Snake">
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2ZvaWxvZ2E4Mm96OTYwNXBhMWpjYWpiZnduYTR3YjJnNWliMG80cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/osjObDaNrdyTRoQeNQ/giphy.gif" alt="Démo version 3">
                 </div>
 
-                <button>Version 4 : Pommes et téléportation</button>
+                <button data-fr="Version 4 : Pommes et portails" data-en="Version 4: Apples and Portals">Version 4 : Pommes et portails</button>
                 <div>
-                    <p>
-                    Le serpent mange des pommes représentées par ‘6’. À chaque pomme mangée : le score augmente, la taille du serpent s’allonge et la vitesse s’accélère. À 10 pommes mangées, la partie est gagnée. Le serpent peut traverser le plateau via des passages sur chaque bord.
+                    <p data-fr="Le serpent mange des pommes (symbole ‘6’). Chaque pomme augmente le score, allonge le serpent et accélère le jeu. Après 10 pommes, la partie est gagnée. Des portails sur les bords permettent la téléportation."
+                    data-en="The snake eats apples (symbol ‘6’). Each apple increases the score, lengthens the snake, and accelerates the game. After 10 apples, the game is won. Portals on the edges allow teleportation.">
+                    Le serpent mange des pommes (symbole ‘6’). Chaque pomme augmente le score, allonge le serpent et accélère le jeu. Après 10 pommes, la partie est gagnée. Des portails sur les bords permettent la téléportation.
                     </p>
-                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExazQ0b3d1azQxbmh6bGlzbGppb2s4b3o5cnhxem5nYmp6bndxdHdpOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ozUT7nX8Lse8f3f2N2/giphy.gif" alt="Démo de la version 4 du Snake">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExazQ0b3d1azQxbmh6bGlzbGppb2s4b3o5cnhxem5nYmp6bndxdHdpOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ozUT7nX8Lse8f3f2N2/giphy.gif" alt="Démo version 4">
                 </div>
 
-                <button>Documentation : </button>
+                <button data-fr="Documentation" data-en="Documentation">Documentation</button>
                 <div>
-                    <p>
-                    Documentation du code de la version 4 avec l'outil Doxygen.
+                    <p data-fr="La version 4 a été documentée avec l’outil Doxygen." data-en="Version 4 was documented using Doxygen.">
+                    La version 4 a été documentée avec l’outil Doxygen.
                     </p>
                     <div class="carousel-container">
                         <div class="slides11">
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page1.png" alt="Image 1"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page2.png" alt="Image 2"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page3.png" alt="Image 3"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page4.png" alt="Image 4"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page5.png" alt="Image 5"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page6.png" alt="Image 6"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page7.png" alt="Image 7"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page8.png" alt="Image 8"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page9.png" alt="Image 9"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page10.png" alt="Image 10"></div>
-                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page11.png" alt="Image 11"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page1.png" alt="Page 1"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page2.png" alt="Page 2"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page3.png" alt="Page 3"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page4.png" alt="Page 4"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page5.png" alt="Page 5"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page6.png" alt="Page 6"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page7.png" alt="Page 7"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page8.png" alt="Page 8"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page9.png" alt="Page 9"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page10.png" alt="Page 10"></div>
+                            <div class="slide11"><img src="../images/carrouselProjet1Etape5/page11.png" alt="Page 11"></div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </div>
+        
     </main>
 
     <footer>
@@ -115,46 +145,34 @@
                     <li><a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
                     <li><a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a></li>
                     <li><a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a></li>
-                    <li><a href="../autre/CV_Yannis.pdf" target="_blank" download data-fr="Mon CV" data-en="My Resume">Mon CV</a></li>
+                    <li><a href="../autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a></li>  
                 </ul>
             </div>
 
             <div>
                 <a href="../meContacter.html"><h3 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h3></a>
                 <ul>
-                    <li data-fr="Lieu : Lannion / Bretagne" data-en="Location: Lannion / Brittany">Lieu : Lannion / Bretagne</li>
-                    <li>
-                        <span data-fr="Téléphone :" data-en="Phone:">Téléphone :</span>
-                        <a href="tel:+33656803242">+33 6 56 80 32 42</a>
-                    </li>
-                    <li>
-                        <span data-fr="Email :" data-en="Email:">Email :</span>
-                        <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a>
-                    </li>
+                    <li data-fr="Lieu : Lannion / Bretagne" data-en="Location: Lannion / Brittany">Lieu : Lannion / Bretagne</li>
+                    <li><span data-fr="Téléphone :" data-en="Phone:">Téléphone :</span> <a href="tel:+33656803242">+33 6 56 80 32 42</a></li>
+                    <li><span data-fr="Email :" data-en="Email:">Email :</span> <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 data-fr="Suivez-moi" data-en="Follow me">Suivez-moi</h3>
+                <h3 data-fr="Suivez-moi" data-en="Follow Me">Suivez-moi</h3>
                 <ul>
-                    <li>
-                        <a href="https://github.com/yannislechevere" target="_blank">
-                            <img src="../icons/iconGithub.png" alt="GitHub" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank">
-                            <img src="../icons/iconLincedin.png" alt="LinkedIn" />
-                        </a>
-                    </li>
+                <li><a href="https://github.com/yannislechevere" target="_blank"><img src="../icons/iconGithub.png" alt="GitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank"><img src="../icons/iconLincedin.png" alt="LinkedIn"></a></li>
                 </ul>
             </div>
         </div>
-
         <div>
-            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">© 2025 Yannis Le Chevère — Tous droits réservés.</p>
+            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">
+                © 2025 Yannis Le Chevère — Tous droits réservés.
+            </p>
         </div>
     </footer>
+
     <script src="../scripts/langue.js"></script>
     <script src="../scripts/menu.js"></script>
     <script src="../scripts/deroule.js"></script>

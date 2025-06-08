@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion d'une ligue de footbal - LE CHEVERE Yannis</title>
+    <title data-fr="Gestion d'une ligue de football - LE CHEVERE Yannis" data-en="Football League Management - LE CHEVERE Yannis">
+        Gestion d'une ligue de football - LE CHEVERE Yannis
+    </title>
     <link rel="icon" href="../images/portraitYannis.png" type="image/png">
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -15,40 +17,77 @@
             <a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a>
             <a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
             <a href="../autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
-            
-            <button id="langBtn" onclick="toggleLangue()">Français</button>
+            <button id="langBtn" onclick="toggleLangue()" data-fr="Français" data-en="English">Français</button>
         </nav>
-        
     </header>
+
     <main id="proj">
-        <h1>Gestion d'une ligue de footbal</h1>
-        
-        <p>Le but de ce projet est de comprendre, gerer et administrer une base de donner sur la gestions d'une ligue de football.</p>
+        <h1 data-fr="Gestion d'une ligue de football" data-en="Football League Management">
+            Gestion d'une ligue de football
+        </h1>
+
+        <p data-fr="Le but de ce projet est de comprendre, gérer et administrer une base de données pour la gestion d'une ligue de football. C'est un projet réalisé en binôme."
+           data-en="The purpose of this project is to understand, manage, and administer a database for managing a football league. This project was carried out in pairs.">
+            Le but de ce projet est de comprendre, gérer et administrer une base de données pour la gestion d'une ligue de football. C'est un projet réalisé en binôme.
+        </p>
+
         <div>
             <section>
-                <h2>Compétance n°4 : Création d'une base de données</h2>
-                <p>Ce projet est en lien avec la competance 4 du <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf">programme du BUT informatique</a> : Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise</p>
+                <h2 data-fr="Compétence n°4 : Création d'une base de données" data-en="Skill No. 4: Creating a Database">
+                    Compétence n°4 : Création d'une base de données
+                </h2>
+                <p data-fr="Ce projet est en lien avec la compétence 4 du programme du BUT informatique : Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise."
+                   data-en="This project is linked to Skill No. 4 of the BUT Informatique program: Designing, managing, administering, and utilizing company data, and providing all necessary information for effective management.">
+                    Ce projet est en lien avec la compétence 4 du <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf">programme du BUT informatique</a> : Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise.
+                </p>
             </section>
-            <section>
-                <h2>Les outils utiliser : </h2>
-                <ul>
 
-                    <li><a href="https://www.uml.org/"><img src="../icons/iconUml.png">Language UML</a> (pour la traduction en diagrame)</li>
-                    <li><a href="https://www.visual-paradigm.com/support/documents/"><img src="../icons/iconVisualParadigm.png">Visual Paradigm</a> (pour faire les diagrames)</li>
-                    <li><a href="https://reldb.org/c/"><img src="../icons/iconRel.jpeg">REL</a> (pour faire la traduction en tutorial D)</li>
-                    <li><a href="https://workspace.google.com/intl/fr/products/docs/"><img src="../icons/iconGoogleDocs.png">Google Docs</a> (pour rediger des comptes rendus)</li>
- 
+            <section>
+                <h2 data-fr="Les outils utilisés :" data-en="Tools Used:">Les outils utilisés :</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.uml.org/">
+                            <img src="../icons/iconUml.png" alt="UML Icon">
+                            <span data-fr="Langage UML" data-en="UML Language">Langage UML</span>
+                        </a>
+                        (pour la modélisation)
+                    </li>
+                    <li>
+                        <a href="https://www.visual-paradigm.com/support/documents/">
+                            <img src="../icons/iconVisualParadigm.png" alt="Visual Paradigm Icon">
+                            <span data-fr="Visual Paradigm" data-en="Visual Paradigm">Visual Paradigm</span>
+                        </a>
+                        (pour réaliser les diagrammes)
+                    </li>
+                    <li>
+                        <a href="https://reldb.org/c/">
+                            <img src="../icons/iconRel.jpeg" alt="REL Icon">
+                            <span data-fr="REL" data-en="REL">REL</span>
+                        </a>
+                        (pour la traduction en Tutorial D)
+                    </li>
+                    <li>
+                        <a href="https://workspace.google.com/intl/fr/products/docs/">
+                            <img src="../icons/iconGoogleDocs.png" alt="Google Docs Icon">
+                            <span data-fr="Google Docs" data-en="Google Docs">Google Docs</span>
+                        </a>
+                        (pour rédiger les comptes rendus)
+                    </li>
                 </ul>
-            </section>  
-        
-            <section> 
-                <h2>Les Etapes : </h2>
-                <p>Ce projet est diviser en deux partie qui se complete. La premiere partie est l'analise des dependance fonctionnelle et la realisation d'un diagrame de classe. La deuxieme partie quand a elle est de creer le diagramme des contrainte d'integriter referencielle te la programmation en tutorial D de la base de donner.</p>
-            
-                <button>Partie 1 : </button>
+            </section>
+
+            <section>
+                <h2 data-fr="Les étapes :" data-en="Steps:">Les étapes :</h2>
+                <p data-fr="Ce projet est divisé en deux parties complémentaires. La première partie consiste en l'analyse des dépendances fonctionnelles et la réalisation d'un diagramme de classes. La deuxième partie consiste à créer le diagramme des contraintes d'intégrité référentielle, puis à programmer la base de données en Tutorial D."
+                   data-en="This project is divided into two complementary parts. The first part involves analyzing functional dependencies and creating a class diagram. The second part involves designing the referential integrity constraints diagram and developing the database using Tutorial D.">
+                    Ce projet est divisé en deux parties complémentaires. La première partie consiste en l'analyse des dépendances fonctionnelles et la réalisation d'un diagramme de classes. La deuxième partie consiste à créer le diagramme des contraintes d'intégrité référentielle, puis à programmer la base de données en Tutorial D.
+                </p>
+
+                <button data-fr="Partie 1 :" data-en="Part 1:">Partie 1 :</button>
                 <div>
-                    <p>
-                    Le serpent de taille fixe se déplace automatiquement vers la droite. L'utilisateur définit sa position initiale via les coordonnées (x, y). Le jeu commence ensuite avec un affichage dynamique dans le terminal.
+                    <p data-fr="Analyse du sujet, liste des dépendances fonctionnelles, réalisation d'un diagramme de classes pour bien comprendre le sujet."
+                       data-en="Subject analysis, list of functional dependencies, and creation of a class diagram to fully understand the topic.">
+                        Analyse du sujet, liste des dépendances fonctionnelles, réalisation d'un diagramme de classes pour bien comprendre le sujet.
                     </p>
                     <div class="carousel-container">
                         <div class="slides5">
@@ -61,17 +100,18 @@
                     </div>
                 </div>
 
-                <button>Partie 2 : </button>
+                <button data-fr="Partie 2 :" data-en="Part 2:">Partie 2 :</button>
                 <div>
-                    <p>
-                    Le serpent de taille fixe se déplace automatiquement vers la droite. L'utilisateur définit sa position initiale via les coordonnées (x, y). Le jeu commence ensuite avec un affichage dynamique dans le terminal.
+                    <p data-fr="Reprise de l'étape 1 pour réaliser le graphe des contraintes d'intégrité référentielle. Ensuite, création de la base de données en Tutorial D."
+                       data-en="Continuation from Part 1 to create the referential integrity constraints diagram. Then, the database is created using Tutorial D.">
+                        Reprise de l'étape 1 pour réaliser le graphe des contraintes d'intégrité référentielle. Ensuite, création de la base de données en Tutorial D.
                     </p>
-                    <img src="../images/projet4Etape2.png" alt="Démo de la version 1 du Snake">
+                    <img src="../images/projet4Etape2.png" alt="Diagramme de la base de données">
                 </div>
             </section>
         </div>
-        
     </main>
+
     <footer>
         <div>
             <div>
@@ -117,9 +157,12 @@
         </div>
 
         <div>
-            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">© 2025 Yannis Le Chevère — Tous droits réservés.</p>
+            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">
+                © 2025 Yannis Le Chevère — Tous droits réservés.
+            </p>
         </div>
     </footer>
+
     <script src="../scripts/langue.js"></script>
     <script src="../scripts/menu.js"></script>
     <script src="../scripts/deroule.js"></script>
