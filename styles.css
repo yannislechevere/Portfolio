@@ -195,6 +195,12 @@ header select {
         margin-top: 5em;
     }
 
+    header nav button {
+        margin-right: auto;
+        width: 6em;
+        padding: 1em;
+    }
+
 }
 
 /****************************************************************************************************************/
