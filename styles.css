@@ -178,6 +178,10 @@ header select {
         transition: left 0.3s ease-in-out;
         z-index: 1;
         display: flex;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+
     }
 
     header[data-open="true"] > nav {
@@ -186,7 +190,7 @@ header select {
 
     header nav a {
         width: 6em;
-        padding: 1em;
+        padding: auto;
     }
     header nav {
         padding: 1em;
@@ -197,8 +201,9 @@ header select {
 
     header nav button {
         margin-right: auto;
-        width: 6em;
-        padding: 1em;
+        width: 10em;
+        padding: auto;
+        
     }
 
 }

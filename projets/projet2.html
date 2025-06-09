@@ -15,80 +15,90 @@
             <a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a>
             <a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
             <a href="../autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Resume">Mon CV</a>
-            
             <button id="langBtn" onclick="toggleLangue()">Français</button>
         </nav>
-        
     </header>
 
     <main id="proj">
-        <h1>Le Snake autonome</h1>
+        <h1 data-fr="Le Snake autonome" data-en="The Autonomous Snake">Le Snake autonome</h1>
 
-        <p>
-        Ce projet a été réalisé individuellement en C, sous forme d'une version console. L'objectif est d'implémenter et d'optimiser plusieurs versions du jeu Snake de mainere autonome, c'est a dire que le sepende se deplace tout seul. Chaque version ajoutant des fonctionnalités progressives.
+        <p data-fr="Ce projet a été réalisé à deux en langage C, sous forme de jeu en console. L'objectif était d'implémenter et d'optimiser plusieurs versions du jeu Snake de manière autonome, c'est-à-dire que le serpent se déplace tout seul. Chaque version ajoutait progressivement de nouvelles fonctionnalités." 
+           data-en="This project was carried out in pairs using the C language, as a console game. The goal was to implement and optimize several versions of the Snake game in an autonomous way, meaning the snake moves by itself. Each version progressively introduced new features.">
+            Ce projet a été réalisé à deux en langage C, sous forme de jeu en console. L'objectif était d'implémenter et d'optimiser plusieurs versions du jeu Snake de manière autonome, c'est-à-dire que le serpent se déplace tout seul. Chaque version ajoutait progressivement de nouvelles fonctionnalités.
         </p>
+
         <div>
             <section>
-                <h2>Compétence n°2 : Comparaison d’approches algorithmiques</h2>
-                <p>
-                    Ce projet s'inscrit dans la <strong>compétence 2</strong> du <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank">programme du BUT Informatique</a> : Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d’exécution, précision,consommation de ressources.
+                <h2 data-fr="Compétence n°2 : Comparaison d'approches algorithmiques" data-en="Skill No. 2: Comparison of Algorithmic Approaches">Compétence n°2 : Comparaison d'approches algorithmiques</h2>
+                <p data-fr="Ce projet s'inscrit dans la compétence 2 du programme du BUT Informatique : proposer des applications informatiques optimisées en fonction de critères spécifiques tels que le temps d'exécution, la précision et la consommation de ressources." 
+                data-en="This project is part of Skill No. 2 in the Bachelor's in Computer Science program: designing optimized applications based on specific criteria such as execution time, accuracy, and resource usage.">
+                    Ce projet s'inscrit dans la compétence 2 du programme du BUT Informatique : proposer des applications informatiques optimisées en fonction de critères spécifiques tels que le temps d'exécution, la précision et la consommation de ressources.
                 </p>
             </section>
 
             <section>
-                <h2>Les outils utiliser : </h2>
+                <h2 data-fr="Outils utilisés" data-en="Tools Used">Outils utilisés</h2>
                 <ul>
-                    <li><a href="https://devdocs.io/c/"><img src="../icons/iconC.png">Le language C</a> (pour programmer les versions)</li>
-                    <li><a href="https://code.visualstudio.com/docs"><img src="../icons/iconVisualStudioCode.png">Visual Studio Code</a> (pour éditer le code)</li>
-                    <li><a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="../icons/iconGoogleSheets.png">Google Sheets</a> (pour les cahiers de tests)</li>
-                    <li><a href="https://docs.github.com/fr"><img src="../icons/iconGithub.png">GitHub</a> (pour la coordination)</li>
+                    <li>
+                        <a href="https://devdocs.io/c/">
+                            <img src="../icons/iconC.png">
+                                <span data-fr="Langage C" data-en="C Language">Langage C</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://code.visualstudio.com/docs"><img src="../icons/iconVisualStudioCode.png"><span data-fr="Visual Studio Code (pour éditer le code)" data-en="Visual Studio Code (for editing code)">Visual Studio Code (pour éditer le code)</span></a>
+                    </li>
+                    <li>
+                        <a href="https://workspace.google.com/intl/fr/products/sheets/"><img src="../icons/iconGoogleSheets.png"><span data-fr="Google Sheets (pour les cahiers de tests)" data-en="Google Sheets (for test notebooks)">Google Sheets (pour les cahiers de tests)</span></a>
+                    </li>
+                    <li>
+                        <a href="https://docs.github.com/fr"><img src="../icons/iconGithub.png"><span data-fr="GitHub (pour la coordination en équipe)" data-en="GitHub (for team coordination)">GitHub (pour la coordination en équipe)</span></a>
+                    </li>
                 </ul>
-            </section>  
-
-            <section>
-                <h2>Les étapes du projet</h2>
-                <p>
-                    Le développement s'est déroulé en 4 versions successives. Cliquez sur chaque version pour voir les détails.
-                </p>
-
-                <button>Version 1 : Déplacement simple</button>
-                <div>
-                    <p>
-                    Le serpent de taille fixe se déplace automatiquement vers la droite. L'utilisateur définit sa position initiale via les coordonnées (x, y). Le jeu commence ensuite avec un affichage dynamique dans le terminal.
-                    </p>
-                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGU4Y21oa3c5bzB3bnRxb3Zva2dzbWJicm5vdHd6Y2s0c3c0anF6MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gYPKZjxr2yQnHsRHgd/giphy.gif" alt="Démo de la version 1 du Snake autonome">
-                </div>
-
-                <button>Version 2 : Contrôle du serpent</button>
-                <div>
-                    <p>
-                    Le serpent peut se déplacer dans toutes les directions avec les touches <strong>ZQSD</strong>. Le demi-tour est interdit. Le serpent peut se croiser et sortir de l’écran.
-                    </p>
-                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTNqOGNzOW1ycTdsYnVjOGp5bmlwbWYydHBqNjMxOXNneHdveWh4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3DCy1io8mQljPbcp3N/giphy.gif" alt="Démo de la version 2 du Snake autonome">
-
-                </div>
-
-                <button>Version 3 : Limites et obstacles</button>
-                <div>
-                    <p>
-                    Le plateau de 80x40 est délimité par des bordures. Le serpent meurt s’il touche un mur. 4 pavés d’obstacles sont générés aléatoirement dans le cadre sans toucher les bords.
-                    </p>
-                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm9ueG5zZjRxMjFzd2MybjA5MzloNmdqaDEzNjgwdW10cmtlbmRsNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zp3fCnFr24ULyFCgMp/giphy.gif" alt="Démo de la version 3 du Snake autonome">
-                </div>
-
-                <button>Version 4 : Pommes et téléportation</button>
-                <div>
-                    <p>
-                    Le serpent mange des pommes représentées par ‘6’. À chaque pomme mangée : le score augmente, la taille du serpent s’allonge, et la vitesse s’accélère. À 10 pommes mangées, la partie est gagnée. Le serpent peut traverser le plateau via des passages sur chaque bord.
-                    </p>
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTlpbHJ6enNrZzZnM2xiZHhsZmlrZHhzdTZwZGxoOWhjMHk1eTV1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2pt9GOvGwij1ozcCrH/giphy.gif" alt="Démo de la version 4 du Snake autonome">
-                </div>
             </section>
 
+            <section>
+                <h2 data-fr="Les versions du projet" data-en="Project Versions">Les versions du projet</h2>
+                <p data-fr="Le développement s'est déroulé en quatre versions successives." data-en="The development was carried out in four successive versions.">Le développement s'est déroulé en quatre versions successives.</p>
+
+                <button data-fr="Version 1 : Snake basique" data-en="Version 1: Basic Snake">Version 1 : Snake basique</button>
+                <div>
+                    <p data-fr="Le serpent évolue sur un plateau de 80x80 délimité par une bordure. Il se déplace automatiquement vers les pommes qui apparaissent une à une, en empruntant le chemin le plus court possible. Une fois les dix pommes mangées, le jeu s'arrête." 
+                    data-en="The snake moves on an 80x80 grid bordered by a wall. It automatically moves toward the apples that appear one at a time, following the shortest path possible. Once ten apples have been eaten, the game ends.">
+                        Le serpent évolue sur un plateau de 80x80 délimité par une bordure. Il se déplace automatiquement vers les pommes qui apparaissent une à une, en empruntant le chemin le plus court possible. Une fois les dix pommes mangées, le jeu s'arrête.
+                    </p>
+                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzhteXZidjFnaDlqeWFlbThiMGlsazh5N2Jsa2x3dmE5ZTZmYzJmeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gYPKZjxr2yQnHsRHgd/giphy.gif" alt="Démo de la version 1 du Snake autonome">
+                </div>
+
+                <button data-fr="Version 2 : Trous dans la bordure" data-en="Version 2: Border Holes">Version 2 : Trous dans la bordure</button>
+                <div>
+                    <p data-fr="Cette fois-ci, le serpent peut utiliser les trous dans la bordure pour passer d'un côté à l'autre du plateau, ce qui lui permet de prendre le chemin le plus court." 
+                    data-en="This time, the snake can use the holes in the border to move from one side of the grid to the other, allowing it to take the shortest path.">
+                        Cette fois-ci, le serpent peut utiliser les trous dans la bordure pour passer d'un côté à l'autre du plateau, ce qui lui permet de prendre le chemin le plus court.
+                    </p>
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGNzeHo4cXdvNndjaGtqNDlmeHVxdWdhcnA0cDlraDFvajhhbGZ1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3DCy1io8mQljPbcp3N/giphy.gif" alt="Démo de la version 2 du Snake autonome">
+                </div>
+
+                <button data-fr="Version 3 : Obstacles" data-en="Version 3: Obstacles">Version 3 : Obstacles</button>
+                <div>
+                    <p data-fr="Le serpent est désormais confronté à des obstacles fixes sur le plateau, ce qui l'oblige à faire des détours pour atteindre les pommes." 
+                    data-en="The snake now faces fixed obstacles on the grid, which force it to take detours to reach the apples.">
+                        Le serpent est désormais confronté à des obstacles fixes sur le plateau, ce qui l'oblige à faire des détours pour atteindre les pommes.
+                    </p>
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDluZXRxMXh1dmZyZDgyZ2w3N2V4YWZsejhpNTJpeXc5bDQ4NHFwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zp3fCnFr24ULyFCgMp/giphy.gif" alt="Démo de la version 3 du Snake autonome">
+                </div>
+
+                <button data-fr="Version 4 : Deux serpents" data-en="Version 4: Two Snakes">Version 4 : Deux serpents</button>
+                <div>
+                    <p data-fr="Dans cette dernière version, deux serpents sont présents sur le plateau et doivent manger les pommes plus rapidement que leur adversaire." 
+                    data-en="In this final version, two snakes are on the grid and must eat the apples faster than their opponent.">
+                        Dans cette dernière version, deux serpents sont présents sur le plateau et doivent manger les pommes plus rapidement que leur adversaire.
+                    </p>
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnplanlmcHB3aWx5bzAwbW9qcDEyYmNwcTE0b25zaW5vMWlwaHFhdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2pt9GOvGwij1ozcCrH/giphy.gif" alt="Démo de la version 4 du Snake autonome">
+                </div>
+            </section>
         </div>
         
-
-
     </main>
 
     <footer>
@@ -139,10 +149,9 @@
             <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">© 2025 Yannis Le Chevère — Tous droits réservés.</p>
         </div>
     </footer>
+
     <script src="../scripts/langue.js"></script>
     <script src="../scripts/menu.js"></script>
     <script src="../scripts/deroule.js"></script>
-
-
 </body>
 </html>
