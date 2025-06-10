@@ -1,53 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Carousel Automatique</title>
-  <style>
-    
-    .carousel-container {
-      width: 25em;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Esmeralda MARTIN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .slides {
-      display: flex;
-      width: 100%;
-      animation: slide 2s infinite;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--light);
+            overflow-x: hidden;
+        }
 
-    .slide {
-      width: 100%;
-      flex-shrink: 0;
-    }
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #f093fb;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --white: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
 
-    .slide img {
-      width: 100%;
-      
-    }
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            background: var(linear-gradient(135deg, var(--primary), var(--secondary)));
+            color: var(white);
+            margin: -2rem -2rem 3rem -2rem;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+        }
 
-    /* Animation keyframes */
-    @keyframes slide {
-      0%    { transform: translateX(0%); }
-      33%   { transform: translateX(0%); }
-      34%   { transform: translateX(-100%); }
-      66%   { transform: translateX(-100%); }
-      67%   { transform: translateX(-200%); }
-      100%  { transform: translateX(-200%); }
-    }
-  </style>
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path fill="rgba(255,255,255,0.1)" d="M0,100 C150,200 350,0 500,100 C650,200 850,0 1000,100 L1000,200 L0,200 Z"/></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+     
+       
+
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px 0;
+        }
+
+       
+   
+
+        
+    </style>
 </head>
-<body>
 
-  <div class="carousel-container">
-    <div class="slides">
-      <div class="slide"><img src="images/projet1.png" alt="Image 1"></div>
-      <div class="slide"><img src="images/projet3.png" alt="Image 2"></div>
-      <div class="slide"><img src="images/projet4.jpg" alt="Image 3"></div>
-    </div>
-  </div>
+<body>
+    <!-- Navigation -->
+  
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <!-- Header -->
+        <div class="header fade-in">
+            <h1>Esmeralda MARTIN</h1>
+            <p class="subtitle">Étudiante en BUT Informatique - 1ère année</p>
+        </div>
+
 
 </body>
+
 </html>

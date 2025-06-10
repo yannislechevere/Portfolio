@@ -103,7 +103,7 @@ header nav button {
     background-color: #4A90E2;
     color: white;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 1.5em;
     font-weight: bold;
     border: none;
     transition: background-color 0.3s;
@@ -113,8 +113,8 @@ header a {
     text-decoration: none;
     color: #1E2A38;
     font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 10px 14px;
+    border-radius: 1.5em;
     transition: background-color 0.3s;
 }
 
@@ -127,8 +127,8 @@ header nav button,
 header nav a:nth-child(4) {
     background-color: #4A90E2;
     color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 10px 14px;
+    border-radius: 1.5em;
     font-weight: bold;
     transition: background-color 0.3s;
     border: none;
@@ -178,7 +178,7 @@ header select {
         transition: left 0.3s ease-in-out;
         z-index: 1;
         display: flex;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid #1E2A38;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
 
@@ -275,8 +275,8 @@ header select {
 }
 
 #index section[onclick]:hover {
-    background-color: #4A90E2;
-    color: white;
+    background: linear-gradient(140deg, #4A90E2, #1E2A38);
+   
 }
 
 #index section[onclick]:hover h1,
@@ -307,9 +307,28 @@ header select {
     width: 100%;
 }
 
+
+#index > div section:first-child h1,
+#index > div section:first-child p {
+    color: white;
+}
 #index > div section:first-child {
     grid-column: 1 / 3;
     grid-row: 1;
+    text-align: center;
+    background: linear-gradient(75deg, #4A90E2, #1E2A38);
+    position: relative;
+    overflow: hidden;
+}
+#index > div section:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path fill="rgba(255,255,255,0.1)" d="M0,100 C150,200 350,0 500,100 C650,200 850,0 1000,100 L1000,200 L0,200 Z"/></svg>') no-repeat bottom;
+    background-size: cover;
 }
 
 #index > div section:nth-child(2) {
@@ -367,8 +386,9 @@ header select {
     cursor: pointer;
 }
 #projet > div > section:not(:nth-child(1)):not(:nth-child(8)):hover {
-    background-color: #4A90E2;
+    background: linear-gradient(140deg, #4A90E2, #1E2A38);
     transform: scale(1.02);
+
 }
 
 #projet > div > section:not(:nth-child(1)):not(:nth-child(8)):hover h2,
@@ -620,7 +640,7 @@ header select {
     text-align: left;
     font-size: 1.1rem;
     border: none;
-    border-radius: 0.5em;
+    border-radius: 1.5em;
     margin: 0.5em 0 0;
     transition: background-color 0.3s;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -637,7 +657,7 @@ header select {
     overflow: hidden;
     transition: max-height 0.4s ease-out;
     background-color: #f0f4f8;
-    border-radius: 0 0 0.5em 0.5em;
+    border-radius: 1.5em;
     margin-bottom: 1em;
 }
 
@@ -756,7 +776,10 @@ header select {
 /****************************************************************************************************************/
 
 footer {
-    background-color: #1E2A38;
+background: linear-gradient(135deg,
+  #1E2A38 0%, 
+  #1E2A38 50%, 
+  #4A90E2 100%);
     color: white;
     padding-top: 2em;
     padding-bottom: 1em;
