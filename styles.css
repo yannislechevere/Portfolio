@@ -220,7 +220,7 @@ header select {
 
 #index section {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 1.5em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 2em;
     transform: scale(1);
@@ -354,8 +354,8 @@ header select {
 
 #projet > div > section {
     background-color: white;
-    border-radius: 10px;
-    padding: 0.75em;
+    border-radius: 1.5em;
+    padding: 1.25em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -378,7 +378,7 @@ header select {
 
 #projet > div > section img {
     width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 1em 1em 0px 0px;
     object-fit: cover;
 }
 
@@ -454,7 +454,7 @@ header select {
     gap: 1em;
     background-color: #F3F4F6;
     padding: 0.75em 1em;
-    border-radius: 12px;
+    border-radius: 1.5em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #1E2A38;
     font-weight: bold;
@@ -490,7 +490,7 @@ header select {
 #contact form input,
 #contact form textarea {
     padding: 0.8em;
-    border-radius: 10px;
+    border-radius: 1.5em;
     border: 1px solid #1E2A38;
     margin-top: 0.25em;
     resize: vertical;
@@ -508,7 +508,7 @@ header select {
     color: white;
     padding: 0.8em;
     border: none;
-    border-radius: 10px;
+    border-radius: 1.5em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -521,7 +521,7 @@ header select {
     width: 100%;
     height: 15em;
     border: none;
-    border-radius: 10px;
+    border-radius: 1.5em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -551,7 +551,7 @@ header select {
 
 #contact > div > div {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 1.5em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 2em;
 }
@@ -604,7 +604,7 @@ header select {
 }
 #proj section {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1.5em;
     padding: 2em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -650,7 +650,7 @@ header select {
     max-height: 30em;
     display: block;
     margin: 1em auto;
-    border-radius: 10px;
+    border-radius: 1.5em;
 }
 
 #proj section:nth-child(2) ul li {
@@ -822,7 +822,7 @@ footer > div > div ul {
 footer > div div:nth-child(3) a {
     background-color: #E5E7EB;
     padding: 0.5em;
-    border-radius: 10px;
+    border-radius: 1.5em;
     margin: 0.5em;
 }
 footer > div div:nth-child(3) a img {
