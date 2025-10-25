@@ -12,7 +12,7 @@ Ce projet présente mes réalisations, compétences, et expériences dans le dom
 - Responsive design (adapté à tous les écrans)
 
 
-**votre.email@domaine.com**
+**yannis.lechevere@outlook.fr**
 
 ---
 
