@@ -382,17 +382,17 @@ header select {
     transition: transform 0.3s, background-color 0.3s;
     cursor: default;
 }
-#projet > div > section:not(:nth-child(1)):not(:nth-child(8)) {
+#projet > div > section:not(:nth-child(1)):not(:nth-child(14)) {
     cursor: pointer;
 }
-#projet > div > section:not(:nth-child(1)):not(:nth-child(8)):hover {
+#projet > div > section:not(:nth-child(1)):not(:nth-child(14)):hover {
     background: linear-gradient(140deg, #4A90E2, #1E2A38);
     transform: scale(1.02);
 
 }
 
-#projet > div > section:not(:nth-child(1)):not(:nth-child(8)):hover h2,
-#projet > div > section:not(:nth-child(1)):not(:nth-child(8)):hover p {
+#projet > div > section:not(:nth-child(1)):not(:nth-child(14)):hover h2,
+#projet > div > section:not(:nth-child(1)):not(:nth-child(14)):hover p {
     color: white;
 }
 
@@ -413,7 +413,7 @@ header select {
 }
 
 #projet > div > section:nth-child(1),
-#projet > div > section:nth-child(8) {
+#projet > div > section:nth-child(14) {
     grid-column: 1 / -1;
 }
 
@@ -959,6 +959,7 @@ footer > div:nth-child(2) p {
     flex-shrink: 0;
 }
 
+
 .slides11 {
     display: flex;
     width: 100%;
@@ -1018,6 +1019,8 @@ footer > div:nth-child(2) p {
     85%   { transform: translateX(-400%); }
     100%  { transform: translateX(-400%); }
 }
+
+
 
 @keyframes slide11 {
   0%     { transform: translateX(0%); }

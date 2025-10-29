@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-fr="Base de Données & Analyse Statistique - LE CHEVÈRE Yannis" data-en="Database & Statistical Analysis - Yannis LE CHEVÈRE">Base de Données & Analyse Statistique - LE CHEVÈRE Yannis</title>
+    <link rel="icon" href="../images/portraitYannis.png" type="image/png" />
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+    <header>
+        <button aria-label="Menu">&#9776;</button>
+        <nav>
+            <a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+            <a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a>
+            <a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a>
+            <a href="../autre/CV_Yannis.pdf" download data-fr="Mon CV" data-en="My Résumé">Mon CV</a>
+            <button id="langBtn" onclick="toggleLangue()">Français</button>
+        </nav>
+    </header>
+
+    <main id="proj">
+        <h1 data-fr="Base de Données & Analyse Statistique" data-en="Database & Statistical Analysis">Base de Données & Analyse Statistique</h1>
+
+        <p data-fr="Ce projet avait pour but d’apprendre à concevoir, exploiter et analyser une base de données relationnelle, puis de réaliser une étude statistique sur des données réelles." 
+           data-en="This project aimed to learn how to design, operate and analyze a relational database, and then carry out a statistical study on real data.">
+            Ce projet avait pour but d’apprendre à concevoir, exploiter et analyser une base de données relationnelle, puis de réaliser une étude statistique sur des données réelles.
+        </p>
+
+        <div>
+        <section>
+            <h2 data-fr="Compétence n°10 : Exploitation d’une base de données" 
+                data-en="Skill No. 10: Database exploitation">Compétence n°10 : Exploitation d’une base de données</h2>
+            <p>
+                <span data-fr="Ce projet est en lien avec la " data-en="This project is linked to the ">Ce projet est en lien avec la </span>
+                <strong data-fr="compétence 10" data-en="skill No. 10">compétence 10</strong>
+                <span data-fr=" du programme du BUT Informatique : Concevoir, gérer, administrer et exploiter les données de l’entreprise pour permettre un bon pilotage." data-en=" of the Computer Science Bachelor's program: Design, manage, administer and exploit company data to enable effective management."> du programme du BUT Informatique : Concevoir, gérer, administrer et exploiter les données de l’entreprise pour permettre un bon pilotage.</span>
+            </p>
+        </section>
+
+        <section>
+            <h2 data-fr="Les outils utilisés :" data-en="Tools used:">Les outils utilisés :</h2>
+            <ul>
+                <li><a href="https://docs.python.org/3/"><img src="../icons/iconPython.png" alt="Python" /><span data-fr="Langage Python" data-en="Python language">Langage Python</span></a></li>
+                <li><a href="https://www.postgresql.org/docs/"><img src="../icons/iconPostgreSql.png" alt="PostgreSQL" /><span data-fr="Système de gestion PostgreSQL" data-en="PostgreSQL database system">Système de gestion PostgreSQL</span></a></li>
+                <li><a href="https://workspace.google.com/intl/fr/products/docs/"><img src="../icons/iconGoogleDocs.png" alt="Google Docs" /><span data-fr="Google Docs (pour rédiger les comptes rendus)" data-en="Google Docs (to write reports)">Google Docs (pour rédiger les comptes rendus)</span></a></li>
+                <li><a href="https://code.visualstudio.com/docs"><img src="../icons/iconVisualStudioCode.png" alt="Visual Studio Code" /><span data-fr="Visual Studio Code (pour éditer le code)" data-en="Visual Studio Code (for editing code)">Visual Studio Code (pour éditer le code)</span></a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 data-fr="Les étapes du projet" data-en="Project steps">Les étapes du projet</h2>
+            <p data-fr="Le projet comporte la traduction d'un schéma relationnel en SQL, le peuplement de la base à partir de fichiers CSV, puis une analyse statistique des données (régressions, visualisations, etc.)." data-en="The project includes translating a relational schema into SQL, populating the database from CSV files, then statistical analysis of the data (regressions, visualizations, etc.).">Le projet comporte la traduction d'un schéma relationnel en SQL, le peuplement de la base à partir de fichiers CSV, puis une analyse statistique des données (régressions, visualisations, etc.).</p>
+
+            <button data-fr="Étape 1 : Traduction et implantation d'un schéma relationnel" data-en="Step 1: Translate and implement a relational schema">Étape 1 : Traduction et implantation d'un schéma relationnel</button>
+            <div>
+                <p data-fr="Traduire un schéma relationnel en code SQL pour créer la base de données et documenter le processus dans un rapport." data-en="Translate a relational schema into SQL code to create the database and document the process in a report.">
+                Dans cette partie, il fallait traduire un schéma relationnel en code SQL pour la création d'une base de données et documenter cette étape.
+                </p>
+                <img src="../images/projet10Etape1.png" alt="schéma SQL" />
+            </div>
+
+            <button data-fr="Étape 2 : Peuplement et exploitation de la base de données" data-en="Step 2: Populate and exploit the database">Étape 2 : Peuplement et exploitation de la base de données</button>
+            <div>
+                <p data-fr="Peupler la base de données à partir de fichiers CSV fournis en respectant les contraintes et règles d'intégrité." data-en="Populate the database from provided CSV files while respecting constraints and integrity rules.">
+                    Ici, on a dû peupler la base de données que l'on venait de créer à partir de fichiers CSV fournis. Certaines contraintes devaient être respectées.
+                </p>
+                <div class="carousel-container">
+                    <div class="slides2">
+                        <div class="slide2"><img src="../images/carrouselProjet10Etape2/page1.png" alt="Image 1" /></div>
+                        <div class="slide2"><img src="../images/carrouselProjet10Etape2/page2.png" alt="Image 2" /></div>
+                    </div>
+                </div>
+            </div>
+
+            <button data-fr="Étape 3 : Analyse statistique des données" data-en="Step 3: Statistical analysis of the data">Étape 3 : Analyse statistique des données</button>
+            <div>
+                <p data-fr="Exploiter la base pour produire des analyses statistiques : regressions linéaires, visualisations, indicateurs, et rédiger un rapport avec captures d'écran des résultats Python." data-en="Use the database to produce statistical analyses: linear regressions, visualizations, indicators, and write a report with screenshots of Python results.">
+                    Dans cette partie, nous devions exploiter la base de données à des fins statistiques : réaliser des régressions linéaires, des visualisations, etc., puis fournir un rapport accompagné de captures d'écran des graphiques réalisés en Python.
+                </p>
+                <div class="carousel-container">
+                    <div class="slides3">
+                        <div class="slide3"><img src="../images/carrouselProjet10Etape3/page1.png" alt="Image 1" /></div>
+                        <div class="slide3"><img src="../images/carrouselProjet10Etape3/page2.png" alt="Image 2" /></div>
+                        <div class="slide3"><img src="../images/carrouselProjet10Etape3/page3.png" alt="Image 3" /></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <h3 data-fr="Navigation" data-en="Navigation">Navigation</h3>
+                <ul>
+                    <li><a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="../projet.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+                    <li><a href="../meContacter.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    <li><a href="../autre/CV_Yannis.pdf" target="_blank" download data-fr="Mon CV" data-en="My Résumé">Mon CV</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="../meContacter.html">
+                    <h3 data-fr="Contactez‑moi" data-en="Contact me">Contactez‑moi</h3>
+                </a>
+                <ul>
+                    <li data-fr="Lieu : Lannion / Bretagne" data-en="Location: Lannion / Brittany">Lieu : Lannion / Bretagne</li>
+                    <li>
+                        <span data-fr="Téléphone :" data-en="Phone:">Téléphone :</span>
+                        <a href="tel:+33656803242">+33 6 56 80 32 42</a>
+                    </li>
+                    <li>
+                        <span data-fr="Email :" data-en="Email:">Email :</span>
+                        <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 data-fr="Suivez‑moi" data-en="Follow me">Suivez‑moi</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/yannislechevere" target="_blank">
+                            <img src="../icons/iconGithub.png" alt="GitHub" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank">
+                            <img src="../icons/iconLincedin.png" alt="LinkedIn" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <p data-fr="© 2025 Yannis Le Chevère — Tous droits réservés." data-en="© 2025 Yannis Le Chevère — All rights reserved.">© 2025 Yannis Le Chevère — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/langue.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/deroule.js"></script>
+</body>
+</html>
