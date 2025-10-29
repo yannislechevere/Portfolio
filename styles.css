@@ -382,17 +382,17 @@ header select {
     transition: transform 0.3s, background-color 0.3s;
     cursor: default;
 }
-#projet > div > section:not(:nth-child(1)):not(:nth-child(14)) {
+#projet > div > section:not(:nth-child(1)):not(:nth-child(15)) {
     cursor: pointer;
 }
-#projet > div > section:not(:nth-child(1)):not(:nth-child(14)):hover {
+#projet > div > section:not(:nth-child(1)):not(:nth-child(15)):hover {
     background: linear-gradient(140deg, #4A90E2, #1E2A38);
     transform: scale(1.02);
 
 }
 
-#projet > div > section:not(:nth-child(1)):not(:nth-child(14)):hover h2,
-#projet > div > section:not(:nth-child(1)):not(:nth-child(14)):hover p {
+#projet > div > section:not(:nth-child(1)):not(:nth-child(15)):hover h2,
+#projet > div > section:not(:nth-child(1)):not(:nth-child(15)):hover p {
     color: white;
 }
 
@@ -413,7 +413,7 @@ header select {
 }
 
 #projet > div > section:nth-child(1),
-#projet > div > section:nth-child(14) {
+#projet > div > section:nth-child(15) {
     grid-column: 1 / -1;
 }
 
