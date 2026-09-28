@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yannis Le Chevère - Portfolio</title>
+    <link rel="icon" href="assets/images/caricature_yannis.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="#profil">Profil</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        
+        <nav>
+            <a href="assets/cv/CV-Yannis_Le_Chevère.pdf" target="_blank">
+                <span>CV</span>
+            </a>
+        </nav>
+    </header>
+
+    <div id="bg-shapes-container" class="bg-shapes-global">
+        <div class="parallax-layer" data-speed="0.2"><div class="shape shape-1"></div></div>
+        <div class="parallax-layer" data-speed="0.6"><div class="shape shape-2"></div></div>
+        <div class="parallax-layer" data-speed="-0.3"><div class="shape shape-3"></div></div>
+        <div class="parallax-layer" data-speed="0.9"><div class="shape shape-4"></div></div>
+    </div>
+
+    <main>
+        <section id="accueil">
+            <h1>LE CHEVÈRE Yannis</h1>
+            <p>Étudiant en informatique, passionné par le développement, les nouvelles technologies et l’innovation numérique.</p>
+            
+        </section>
+
+        <!-- Section Profil -->
+        <section id="profil">
+            <h2>Mon profil</h2>
+            <div>
+
+            
+                <div>
+                    <article>
+                        
+                        <p>
+                            J’ai 20 ans et je suis actuellement en troisième année de 
+                            <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank">BUT Informatique</a> 
+                            à l’<a href="https://iut-lannion.univ-rennes.fr/" target="_blank">IUT de Lannion</a>. 
+                            Curieux et motivé, je me spécialise dans le développement logiciel, le développement web et l'intelligence artificielle.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="badge-stage">Recherche active</span>
+                        <h3>Stage</h3>
+                        <p>
+                            À la recherche d'une alternance pour ma 3ème année de BUT Informatique. 
+                            Je privilégie la région de Bretagne et ses alentours (vers Lannion de préférence), avec un intérêt marqué pour les projets innovants.
+                        </p>
+                    </article>
+                </div>
+                
+                <article class="timeline-container">
+                    <h3>Parcours académique</h3>
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot current"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">En cours</span>
+                                <h4><a href="https://www.iutvannes.fr/wp-content/uploads/2024/01/PN-BUT-INFO.pdf" target="_blank">BUT Informatique</a></h4>
+                                <p><a href="https://iut-lannion.univ-rennes.fr/" target="_blank">IUT de Lannion</a></p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2024</span>
+                                <h4><a href="https://www.education.gouv.fr/reussir-au-lycee/le-baccalaureat-general-10457" target="_blank">Baccalauréat Général</a></h4>
+                                <p><a href="https://www.lycee-pavie.fr/" target="_blank">Lycée Auguste Pavie (Guingamp)</a> - Spécialités Mathématiques et NSI.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2021</span>
+                                <h4><a href="https://www.education.gouv.fr/le-diplome-national-du-brevet-10613" target="_blank">Diplôme National du Brevet</a></h4>
+                                <p><a href="https://www.college-jacques-prevert-guingamp.ac-rennes.fr/" target="_blank">Collège Jacques Prévert (Guingamp)</a> - Mention Très Bien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section Réalisations (Mise à jour du bouton Filtre) -->
+        <section id="realisations">
+            <h2>Mes Réalisations</h2>
+            <p>Retrouvez ici mes réalisations de projets universitaires effectuer lors de mon BUT. Mais aussi des projets informatique effectuer au Lycée. De plus de projet realiser en entreprise lors de stage.</p>
+            
+            <div class="realisations-toolbar">
+                <div class="search-box">
+                    <input type="text" id="searchBar" placeholder="Rechercher un projet, une techno...">
+                </div>
+                
+                <div class="select-wrapper">
+                    <select id="sortSelect">
+                        <option value="new">Plus récents d'abord</option>
+                        <option value="old">Plus anciens d'abord</option>
+                        <option value="az">A-Z</option>
+                        <option value="za">Z-A</option>
+                    </select>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+
+                <button type="button" id="filterBtn">
+                    Filtres 
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div id="projectCount" class="project-count">0 réalisation</div>
+            </div>
+
+            <!-- Panneau de filtres (masqué par défaut) -->
+            <div id="filterPanel" class="filter-panel hidden">
+                <div class="filter-group">
+                    <h4>Technologies</h4>
+                    <!-- Adapte les "value" avec les tags exacts que tu utiliseras dans ton JS -->
+                    <label><input type="checkbox" class="filter-cb" value="C"> C</label>
+                    <label><input type="checkbox" class="filter-cb" value="Python"> Python</label>
+                    <label><input type="checkbox" class="filter-cb" value="Java"> Java</label>
+                    <label><input type="checkbox" class="filter-cb" value="HTML"> HTML</label>
+                    <label><input type="checkbox" class="filter-cb" value="CSS/SCSS"> CSS / SCSS</label>
+                    <label><input type="checkbox" class="filter-cb" value="JS"> Java Script</label>
+                    <label><input type="checkbox" class="filter-cb" value="PHP"> PHP</label>
+                    <label><input type="checkbox" class="filter-cb" value="BDD"> Bases de données</label>
+                    <label><input type="checkbox" class="filter-cb" value="PostgreSQL"> PostgreSQL</label>
+                    <label><input type="checkbox" class="filter-cb" value="Docker"> Docker</label>
+                    <label><input type="checkbox" class="filter-cb" value="Github"> GitHub</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Outils / Logiciel</h4>
+                    <label><input type="checkbox" class="filter-cb" value="SGoogle"> Suite Google</label>
+                    <label><input type="checkbox" class="filter-cb" value="SMicrosoft"> Suite Microsoft</label>
+                    <label><input type="checkbox" class="filter-cb" value="Canva"> Canva</label>
+                    <label><input type="checkbox" class="filter-cb" value="Figma"> Figma</label>
+                    <label><input type="checkbox" class="filter-cb" value="DaVinciResove"> DaVinci Resolve</label>
+                    <label><input type="checkbox" class="filter-cb" value="VSCode"> VSCode</label>
+                    <label><input type="checkbox" class="filter-cb" value="Eclipse"> Eclipse</label>
+                    <label><input type="checkbox" class="filter-cb" value="Jira"> Jira</label>
+                    <label><input type="checkbox" class="filter-cb" value="ProjectLibre"> Project Libre</label>
+                    <label><input type="checkbox" class="filter-cb" value="PGAdmin"> PGAdmin</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Type de projet</h4>
+                    <label><input type="checkbox" class="filter-cb" value="BUT"> BUT Informatique</label>
+                    <label><input type="checkbox" class="filter-cb" value="Lycée"> Lycée</label>
+                    <label><input type="checkbox" class="filter-cb" value="Stage"> Stage</label>
+                    <label><input type="checkbox" class="filter-cb" value="Personnel"> Personnel</label>
+                </div>
+            </div>
+
+            <!-- Grille des projets (Vide au départ, le JS va la remplir) -->
+            <div id="projectsGrid"></div>
+            <div id="seeMoreContainer" class="see-more-container hidden">
+                <div class="separator"></div>
+                <button type="button" id="seeMoreBtn">
+                    <span>Voir plus</span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="separator"></div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous souhaiter colaborer, echanger ou vous avez des question me concernant, vous pouvez retrouver mes réseaux et information de contact si dessousu ou me contacter directemenet via le formulaire</p>
+            <div>
+                <div>
+                    <h3>Information personnel</h3>
+                    <p><strong>Lieu :</strong> Lannion - Bretagne - France</p>
+                    <p><strong>Téléphone :</strong> <a href="tel:+33656803242">+33 6 56 80 32 42</a></p>
+                    <p><strong>Email :</strong> <a href="mailto:yannis.lechevere@outlook.fr">yannis.lechevere@outlook.fr</a></p>
+                    <div>
+                        <a href="https://github.com/yannislechevere" target="_blank">
+                            <img src="assets/icons/github_icon.svg" alt="GitHub icon"> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/yannis-le-chev%C3%A8re-b334a1353/" target="_blank">
+                            <img src="assets/icons/linkedin_icon.svg" alt="LinkedIn icon"> LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/xnnddpol" method="POST">
+                    <h3>Contacter moi directement</h3>
+                    <label>
+                        Votre email :
+                        <input type="email" name="email" required placeholder="votre@email.com">
+                    </label>
+                    <label>
+                        Votre message :
+                        <textarea name="message" rows="5" required placeholder="Bonjour, je vous contacte car..."></textarea>
+                    </label>
+                    <button type="submit">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+        
+    
+
+    </main>
+
+    <footer>
+        <p>© 2026 Yannis Le Chevère — Tous droits réservés.</p>
+    </footer>
+    <div id="projectModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="close-btn">&times;</button>
+            <h3 id="modalTitle">Titre du projet</h3>
+            <div id="modalCarousel" class="modal-carousel"></div>
+            <div class="modal-body">
+                <div class="modal-text">
+                    <h4>À propos du projet</h4>
+                    <p id="modalDescription">Description détaillée...</p>
+                </div>
+                <div class="modal-sidebar">
+                    <h4>Technologies & Outils</h4>
+                    <div id="modalTags" class="project-tags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
