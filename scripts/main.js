@@ -158,21 +158,23 @@ filtrerEtTrierProjets();
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('header nav a');
 
-// Options de l'observateur : se déclenche quand la section occupe 50% de l'écran
+// Nouvelle configuration : crée une "ligne de détection" virtuelle au milieu de l'écran
 const observerOptions = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.5 
+    rootMargin: '-50% 0px -50% 0px', // Le déclencheur est exactement à 50% de la hauteur de la fenêtre
+    threshold: 0 // On détecte dès que la section touche cette ligne centrale
 };
 
 const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const id = entry.target.getAttribute('id');
+            
             // Retirer la classe active de tous les liens
             navLinks.forEach(link => {
                 link.classList.remove('active');
             });
+            
             // Ajouter la classe active au lien correspondant à la section visible
             const activeLink = document.querySelector(`header nav a[href="#${id}"]`);
             if (activeLink) {

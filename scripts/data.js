@@ -78,11 +78,27 @@ export const projetsData = [
         descriptionLongue: "Description détaillée à compléter. Un vrai projet de A à Z en équipe. Nous sommes partis du recueil des besoins clients, avons réalisé des maquettes sur Figma, pour finir par l'intégration web en respectant les standards d'accessibilité.",
         dateStr: "oct 2024 - fev 2025",
         dateUnive: 202410,
-        image: "assets/images/projet5.png",
+        image: "assets/images/site_web_jo/image_carte.png",
         images: [
             {
-                src: "assets/images/projet5.png",
-                caption: "Maquette de la page d'accueil sur Figma"
+                src: "assets/images/site_web_jo/images-1.png",
+                link: "https://github.com/yannislechevere/Site_web_Jeux_Olympiques/blob/master/1-Expression_des_besoins/E23_ExpressionDesBesoins.pdf",
+                caption: "Recceuil des besoin"
+            },
+            {
+                src: "assets/images/site_web_jo/images-2.png",
+                link: "https://github.com/yannislechevere/Site_web_Jeux_Olympiques/blob/master/3-Charte_graphique/E23_CharteGraphique.pdf",
+                caption: "Charte graphique"
+            },
+            {
+                src: "assets/images/site_web_jo/images-3.png",
+                link: "https://github.com/yannislechevere/Site_web_Jeux_Olympiques/tree/master/4-Maquettage",
+                caption: "Maquette Figma"
+            },
+            {
+                src: "assets/images/site_web_jo/images-4.png",
+                link: "https://github.com/yannislechevere/Site_web_Jeux_Olympiques/tree/master/5-Code",
+                caption: "Code du site"
             }
         ],
         filtres: ["HTML", "CSS/SCSS", "Github", "VSCode", "Figma", "SGoogle", "BUT"],
@@ -96,16 +112,17 @@ export const projetsData = [
         descriptionLongue: "Description détaillée à compléter. Projet axé sur la gestion d'entreprise et l'économie. Réalisation d'un diagnostic complet pour comprendre la stratégie d'un grand groupe international et ses enjeux RSE.",
         dateStr: "nov 2024 - dec 2024",
         dateUnive: 202411,
-        image: "assets/images/projet6.png",
+        image: "assets/images/analyse_coca_cola/image_carte.png",
         images: [
             {
-                src: "assets/images/projet6.png",
-                caption: "Extrait de la matrice SWOT"
+                src: "assets/images/analyse_coca_cola/images-1.png",
+                link: "https://github.com/yannislechevere/Analyse_de_Coca-Cola/blob/master/Etape1-RedactionRapport/dossier_CHAUVEL_LE-SECH_LE-CHEVERE_GUIGUE.pdf",
+                caption: "Rapport PDF"
             },
             {
-                src: "assets/images/projet6_rse.png", 
-                link: "assets/docs/rapport_rse_coca.pdf",
-                caption: "Rapport d'analyse RSE 📄 (Cliquez pour ouvrir)"
+                src: "assets/images/analyse_coca_cola/images-2.png",
+                link: "https://github.com/yannislechevere/Analyse_de_Coca-Cola/blob/master/Etape2-SoutenanceOrale/oral_CHAUVEL_LE-SECH_LE-CHEVERE_GUIGUE.pdf",
+                caption: "Soutenance orale"
             }
         ],
         filtres: ["SGoogle", "BUT"],
@@ -137,12 +154,29 @@ export const projetsData = [
         descriptionLongue: "Description détaillée à compléter. Découverte du Machine Learning en Python. Implémentation manuelle des algorithmes k-NN et k-Means pour comprendre les mathématiques sous-jacentes à la classification de données.",
         dateStr: "fev 2025 - avr 2025",
         dateUnive: 202502,
-        image: "assets/images/projet8.png",
+        image: "assets/images/algorithm_classification/image_carte.png",
         images: [
             {
-                src: "assets/images/projet8.png",
-                caption: "Visualisation des clusters (k-Means)"
+                src: "assets/images/algorithm_classification/images-1.png",
+                link: "https://github.com/yannislechevere/Algorithme_de_classification/tree/master/AlgoKmeans",
+                caption: "Algo K-means"
+            },
+            {
+                src: "assets/images/algorithm_classification/images-2.png",
+                link: "https://github.com/yannislechevere/Algorithme_de_classification/tree/master/AlgoKnn",
+                caption: "Algo KNN"
+            },
+            {
+                src: "assets/images/algorithm_classification/images-3.png",
+                link: "https://github.com/yannislechevere/Algorithme_de_classification/blob/master/Rapport/Rapport_SAE_2.02.pdf",
+                caption: "Rapport PDF"
+            },
+            {
+                src: "assets/images/algorithm_classification/images-4.png",
+                link: "https://github.com/yannislechevere/Algorithme_de_classification/tree/master/Soutenance",
+                caption: "Soutenance orale"
             }
+
         ],
         filtres: ["Python", "VSCode", "BUT"],
         tagsCarte: ["Python", "IA", "BUT"],
